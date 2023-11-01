@@ -1,0 +1,52 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel
+Emem_wb
+Z1 w1698873002
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 1
+R0
+Z4 8/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd
+Z5 F/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd
+l0
+L4 1
+V3A9Jb[Xf6@CRMn@A@<Ql^2
+!s100 Ya92_DbiYI0VjcM]>4TOM2
+Z6 OL;C;2023.2_2;77
+33
+Z7 !s110 1698873008
+!i10b 1
+Z8 !s108 1698873008.000000
+Z9 !s90 -reportprogress|300|-work|work|/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd|
+!s107 /home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd|
+!i113 0
+Z10 o-work work
+Z11 tExplicit 1 NoCoverage 1 CvgOpt 0
+Adataflow
+R2
+R3
+DEx4 work 6 mem_wb 0 22 3A9Jb[Xf6@CRMn@A@<Ql^2
+!i122 1
+l34
+L22 49
+VY7OaYK4^Ibo]UfhZ3[^Ld0
+!s100 ROISFOn6Tdb^:5IKgl0U;0
+R6
+33
+R7
+!i10b 1
+R8
+R9
+Z12 !s107 /home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd|
+!i113 0
+R10
+R11
