@@ -20,7 +20,7 @@ entity EX_MEM is
        o_MemWrite   : out std_logic_vector(N-1 downto 0);
        o_MemRead    : out std_logic_vector(N-1 downto 0);
        o_RegWrite   : out std_logic_vector(N-1 downto 0);
-       o_MemtoReg    : out std_logic_vector(N-1 downto 0));
+       o_MemtoReg    : in std_logic_vector(N-1 downto 0));
 
 end EX_MEM;
 

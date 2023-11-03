@@ -8,45 +8,168 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 d/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel
-Emem_wb
-Z1 w1698873002
-Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
-!i122 1
-R0
-Z4 8/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd
-Z5 F/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd
+d/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel
+Eex_mem
+Z0 w1699045503
+Z1 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z2 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 7
+Z3 d/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel
+Z4 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/EX_MEM.vhd
+Z5 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/EX_MEM.vhd
 l0
 L4 1
-V3A9Jb[Xf6@CRMn@A@<Ql^2
-!s100 Ya92_DbiYI0VjcM]>4TOM2
+VkT?T4[?MM82N872i[9nIP0
+!s100 A=VlIVP2Be_D0Gm1hFT8l3
 Z6 OL;C;2023.2_2;77
 33
-Z7 !s110 1698873008
+Z7 !s110 1699045505
 !i10b 1
-Z8 !s108 1698873008.000000
-Z9 !s90 -reportprogress|300|-work|work|/home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd|
-!s107 /home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd|
+Z8 !s108 1699045505.000000
+Z9 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/EX_MEM.vhd|
+Z10 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/EX_MEM.vhd|
 !i113 0
-Z10 o-work work
-Z11 tExplicit 1 NoCoverage 1 CvgOpt 0
+Z11 o-work work
+Z12 tExplicit 1 NoCoverage 1 CvgOpt 0
 Adataflow
+R1
 R2
-R3
-DEx4 work 6 mem_wb 0 22 3A9Jb[Xf6@CRMn@A@<Ql^2
-!i122 1
-l34
-L22 49
-VY7OaYK4^Ibo]UfhZ3[^Ld0
-!s100 ROISFOn6Tdb^:5IKgl0U;0
+DEx4 work 6 ex_mem 0 22 kT?T4[?MM82N872i[9nIP0
+!i122 7
+l40
+L27 74
+V_04lSdfS>;1k:8R8D1PZ11
+!s100 Pl:VcD;58[9IQG`T7cd=o0
 R6
 33
 R7
 !i10b 1
 R8
 R9
-Z12 !s107 /home/drewgood/drewgoodcpre381/Proj1Part2/cpre381_part2/src/TopLevel/MEM_WB.vhd|
-!i113 0
 R10
+!i113 0
 R11
+R12
+Eid_ex
+Z13 w1699044883
+R1
+R2
+!i122 8
+R3
+Z14 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
+Z15 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
+l0
+L4 1
+VQ4^Kz2ka3L^dAzSAO2eb?2
+!s100 <@@b><a5QLEM>7Od]B0k00
+R6
+33
+Z16 !s110 1699045507
+!i10b 1
+Z17 !s108 1699045507.000000
+Z18 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd|
+Z19 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 5 id_ex 0 22 Q4^Kz2ka3L^dAzSAO2eb?2
+!i122 8
+l49
+L34 104
+VfEB;d`>PmIRE@H5eaQg7X0
+!s100 L6G_XQ2_Ek9ohZjnmIhQ^1
+R6
+33
+R16
+!i10b 1
+R17
+R18
+R19
+!i113 0
+R11
+R12
+Eif_id
+Z20 w1699039316
+R1
+R2
+!i122 9
+R3
+Z21 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
+Z22 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
+l0
+L4 1
+V:K2jZkg>algU;9REg1aWD1
+!s100 RJP5F`<z1H:[2Lf@>5T_C1
+R6
+33
+Z23 !s110 1699045508
+!i10b 1
+Z24 !s108 1699045508.000000
+Z25 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd|
+Z26 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R1
+R2
+DEx4 work 5 if_id 0 22 :K2jZkg>algU;9REg1aWD1
+!i122 9
+l29
+L16 31
+VBN0G3=3W?mDFHO_C98ZM]3
+!s100 VdHWZY1YR6f;mAZnYPigF2
+R6
+33
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 0
+R11
+R12
+Emem_wb
+Z27 w1699042968
+R1
+R2
+!i122 10
+R3
+Z28 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd
+Z29 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd
+l0
+L4 1
+V3;QLo?Ld]GdA06cnDPDj73
+!s100 Ab8mVNeb:CCi6amJjWN;H0
+R6
+33
+Z30 !s110 1699045509
+!i10b 1
+Z31 !s108 1699045509.000000
+Z32 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd|
+Z33 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd|
+!i113 0
+R11
+R12
+Adataflow
+R1
+R2
+Z34 DEx4 work 6 mem_wb 0 22 3;QLo?Ld]GdA06cnDPDj73
+!i122 10
+l36
+Z35 L24 58
+Z36 VO=`G4b3dGAcfMg;]k;E`>3
+Z37 !s100 [8`fT7l>mgjfAz3[5R>Mh1
+R6
+33
+R30
+!i10b 1
+R31
+R32
+R33
+!i113 0
+R11
+R12
