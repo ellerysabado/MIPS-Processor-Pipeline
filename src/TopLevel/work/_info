@@ -658,7 +658,7 @@ Z85 DPx4 work 10 mips_types 0 22 gfgOYlBmh2KZl;f4CSMWE2
 R74
 R1
 R2
-!i122 105
+!i122 107
 R3
 Z86 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
 Z87 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
@@ -668,9 +668,9 @@ V]QGiM12X]GgG?lkJYDP<?2
 !s100 aIWKSQ@AlR4@1EGOAoF480
 R6
 33
-Z88 !s110 1699297883
+Z88 !s110 1699298429
 !i10b 1
-Z89 !s108 1699297883.000000
+Z89 !s108 1699298429.000000
 Z90 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd|
 Z91 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd|
 !i113 0
@@ -682,7 +682,7 @@ R74
 R1
 R2
 Z92 DEx4 work 14 mips_processor 0 22 ]QGiM12X]GgG?lkJYDP<?2
-!i122 105
+!i122 107
 l295
 Z93 L36 472
 Z94 VFKhjPf9QBSmfC0L8okW8F0
