@@ -1,0 +1,50 @@
+
+#
+# CprE 381 Generated Quartus Settings File
+#
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:08  JANUARY 28, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TOP_LEVEL_ENTITY MIPS_Processor
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/MIPS_types.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Add_Sub.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/CompleteALU.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Control.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Decoder_5to32.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Extender.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/FetchComponent.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/FullAdder.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/MIPS_Processor.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Mux32t1.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/MyAdder.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/N_OnesComp.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Nbit_adder.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/OnesComp.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/RegFile.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/Register_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/adder_subtractor.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/andg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/bus_array_type.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/dffg.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/inArr16.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/invg.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/mem.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/mux16t1.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/mux2t1.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/mux2t1_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/nXor.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/nbitAnd.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/nbitNor.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/nbitOr.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/newBarrelShifter.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/one_BitAdder.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/org2.vhd"
+set_global_assignment -name VHDL_FILE "/home/gulotta3/Gulotta3/CprE381/cpre381_part1/cpre381-part1/cpre381/proj/src/TopLevel/xorg2.vhd"

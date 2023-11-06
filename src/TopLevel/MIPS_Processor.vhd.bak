@@ -314,8 +314,8 @@ begin
                 DATA_WIDTH => N)
     port map(clk  => iCLK,
              addr => s_ALUout_MEM(11 downto 2),
-             data => s_O_MEM,
-             we   => s_MemWrite_MEM,
+             data => s_DMemData,
+             we   => s_DMemWr,
              q    => s_DMemOut);
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
