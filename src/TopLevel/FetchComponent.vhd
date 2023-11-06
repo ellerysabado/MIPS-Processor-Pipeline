@@ -8,14 +8,14 @@ entity FetchComponent is
   port(i_CLK        : in std_logic;     -- Clock input
        i_jAddr      : in std_logic_vector(I-1 downto 0);     -- Reset input
        i_PC         : in std_logic_vector(N-1 downto 0);     -- Write enable input
-       i_branchAddr : in std_logic_vector(N-1 downto 0);     -- Data value input
+       i_branchMuxD1 : in std_logic_vector(N-1 downto 0);     -- Data value input
        i_branchEN   : in std_logic;     
        i_jumpEN     : in std_logic; 
        i_jrAddr     : in std_logic_vector(N-1 downto 0); 
        i_jrEN	    : in std_logic;
        o_pcOut      : out std_logic_vector(N-1 downto 0);   -- Data value output
        o_final  : out std_logic_vector(N-1 downto 0));
-
+       
 end FetchComponent;
 
 architecture structural of FetchComponent is
@@ -56,22 +56,22 @@ port map(
 
 
 --pc + branch adder
-s_shiftBranchAddr <= i_branchAddr(29 downto 0) & "00";
+--s_shiftBranchAddr <= i_branchAddr(29 downto 0) & "00";
 
-g_PCAdder1: Add_Sub 
-port map(
-	iA	=> s_pcAddFour,
-	iB	=> s_shiftBranchAddr,
-	i_S	=> '0',
-	oC	=> s_carry2,
-	oSum	=> s_pcAddBranch);
+--g_PCAdder1: Add_Sub 
+--port map(
+--	iA	=> i_pcAddFour,
+--	iB	=> i_shiftBranchAddr,
+--	i_S	=> '0',
+--	oC	=> s_carry2,
+--	oSum	=> o_pcAddBranch);
 
 -- branch mux or pc+4
 g_branchMUX: mux2t1_N 
 port map (
     i_S  => i_branchEN,
     i_D0 => s_pcAddFour,      
-    i_D1 => s_pcAddBranch,     
+    i_D1 => i_branchMuxD1,     
     o_O  => s_branchMux);
 
 --shift for jump

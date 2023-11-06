@@ -1382,3 +1382,109 @@ vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_part
 # -- Compiling architecture structure of MIPS_Processor
 # End time: 14:46:54 on Nov 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/FetchComponent.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:31:05 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/FetchComponent.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FetchComponent
+# -- Compiling architecture structural of FetchComponent
+# End time: 15:31:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:31:06 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): (vcom-1141) Identifier "Add_Sub" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): (vcom-1484) Unknown formal identifier "i_PCAddBranch".
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(468): (vcom-1484) Unknown formal identifier "o_PCAddBranch".
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(479): VHDL Compiler exiting
+# End time: 15:31:06 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:32:47 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture dataflow of ID_EX
+# End time: 15:32:47 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:32:48 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): (vcom-1141) Identifier "Add_Sub" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): (vcom-1484) Unknown formal identifier "i_PCAddBranch".
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(468): (vcom-1484) Unknown formal identifier "o_PCAddBranch".
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(479): VHDL Compiler exiting
+# End time: 15:32:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:33:56 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(381): (vcom-1141) Identifier "Add_Sub" does not identify a component declaration.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(519): VHDL Compiler exiting
+# End time: 15:33:56 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:34:24 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 15:34:24 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/FetchComponent.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:34:26 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/FetchComponent.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity FetchComponent
+# -- Compiling architecture structural of FetchComponent
+# End time: 15:34:26 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:34:28 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ID_EX
+# -- Compiling architecture dataflow of ID_EX
+# End time: 15:34:28 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

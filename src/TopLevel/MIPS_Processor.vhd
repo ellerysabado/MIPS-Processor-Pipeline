@@ -74,7 +74,7 @@ component FetchComponent is
   port(i_CLK        : in std_logic;     -- Clock input
        i_jAddr      : in std_logic_vector(I-1 downto 0);     -- Reset input
        i_PC         : in std_logic_vector(N-1 downto 0);     -- Write enable input
-       i_branchAddr : in std_logic_vector(N-1 downto 0);     -- Data value input
+       i_branchMuxD1 : in std_logic_vector(N-1 downto 0);     -- Data value input
        i_branchEN   : in std_logic; 
        i_jumpEN     : in std_logic; 
        i_jrAddr     : in std_logic_vector(N-1 downto 0); 
@@ -147,6 +147,17 @@ component andg2 is
        o_F          : out std_logic);
 end component;
 
+
+component Add_Sub
+  port(
+       iA               : in std_logic_vector(N-1 downto 0);
+       iB               : in std_logic_vector(N-1 downto 0);
+       i_S		: in std_logic;
+       oC		: out std_logic;
+       oSum		: out std_logic_vector(N-1 downto 0));
+
+end component;
+
 component CompleteALU is
   port(i_iput1      : in std_logic_vector(N-1 downto 0);
        i_iput2      : in std_logic_vector(N-1 downto 0);
@@ -176,6 +187,7 @@ component ID_EX is
        i_WE          : in std_logic;     -- Write enable input
        i_RegDstMux   : in std_logic_vector(4 downto 0);
        i_RegWrite    : in std_logic;
+       i_PCAddBranch         : in std_logic_vector(N-1 downto 0);
        i_imm         : in std_logic_vector(N-1 downto 0);
        i_Q           : in std_logic_vector(N-1 downto 0);
        i_O           : in std_logic_vector(N-1 downto 0);
@@ -186,6 +198,7 @@ component ID_EX is
        i_MemRead     : in std_logic;
        i_MemtoReg    : in std_logic;
        o_RegDstMux   : out std_logic_vector(4 downto 0);
+       o_PCAddBranch         : out std_logic_vector(N-1 downto 0);
        o_imm         : out std_logic_vector(N-1 downto 0);
        o_Q           : out std_logic_vector(N-1 downto 0);
        o_O           : out std_logic_vector(N-1 downto 0);
@@ -263,13 +276,13 @@ signal  s_branchAddr 	   :  std_logic_vector(N-1 downto 0);
 signal  s_jrAddr           :  std_logic_vector(N-1 downto 0); 
 signal  s_PCsrc  	   :  std_logic;
 signal  s_Zero  	   :  std_logic;
-signal  s_PCoutput, s_pcDEL, s_Data       :  std_logic_vector(N-1 downto 0); 
+signal  s_PCoutput, s_pcDEL, s_Data, s_shiftBranchAddr       :  std_logic_vector(N-1 downto 0); 
 signal  s_PCAdd  :  std_logic_vector(N-1 downto 0);
 signal  s_InstMem  :  std_logic_vector(N-1 downto 0);
 signal  s_imm_EX    :  std_logic_vector(N-1 downto 0);
 signal  s_Q_EX    :  std_logic_vector(N-1 downto 0);
 signal  s_O_EX    :  std_logic_vector(N-1 downto 0);
-signal  s_PCAddBranch    :  std_logic_vector(N-1 downto 0);
+signal  s_PCAddBranch_EX, s_PCAddBranch    :  std_logic_vector(N-1 downto 0);
 signal s_ALUOp_EX	   :  std_logic_vector(3 downto 0); 
 signal s_ALUSrc_EX  :  std_logic;
 signal s_Branch_EX  :  std_logic;
@@ -365,13 +378,24 @@ g_FetchComponent: FetchComponent
 port map(i_CLK		=> iCLK,     
        i_jAddr		=> s_Inst(25 downto 0),      
        i_PC		=> s_PCAdd,        
-       i_branchAddr	=> s_imm32, 
+       i_branchMuxD1 => s_PCAddBranch_EX,
        i_branchEN	=> s_PCSrc,       
        i_jumpEN		=> s_Jump,    
        i_jrAddr		=> s_RegOutData,      
        i_jrEN		=> s_JumpReg,	    
        o_pcOut		=> s_PCoutput,     
        o_final	        => s_pcDEL);
+
+s_shiftBranchAddr <= s_imm32(29 downto 0) & "00";
+
+
+g_PCAdder1: Add_Sub 
+port map(
+	iA	=> s_PCAdd,
+	iB	=> s_shiftBranchAddr,
+	i_S	=> '0',
+	oC	=> open,
+	oSum	=> s_PCAddBranch);
 
 
 g_ControlUnit: Control
@@ -408,7 +432,7 @@ port map(alucontrol	=> s_ALUOp_EX,
 s_DMemAddr <= oALUOut;
 
 g_MuxMemToReg: mux2t1_N
-port map(i_S		=> s_Mem2Reg,
+port map(i_S		=> s_MemtoReg_WB,
 	i_D0		=> s_ALUout_WB,
 	i_D1		=> s_MemReadData_WB,
 	o_O		=> s_RegWrData);
@@ -442,6 +466,7 @@ g_ID_EX: ID_EX
   port map(i_CLK          => iCLK,
         i_RST        	=> iRST,
         i_WE          	=> '1',
+        i_PCAddBranch  => s_PCAddBranch,
         i_RegDstMux   => s_RD,
         i_imm        	=> s_imm32,
         i_Q           	=> s_RegOutData,
@@ -453,6 +478,7 @@ g_ID_EX: ID_EX
         i_MemWrite    	=> s_DMemWr,
         i_MemRead     	=> s_MemRead,
         i_MemtoReg   	=> s_Mem2Reg,
+        o_PCAddBranch   => s_PCAddBranch_EX,
         o_imm         	=> s_imm_EX,
         o_Q          	=> s_Q_EX,
         o_O           	=> s_O_EX,

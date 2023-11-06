@@ -8,6 +8,7 @@ entity ID_EX is
        i_WE          : in std_logic;     -- Write enable input
        i_RegDstMux   : in std_logic_vector(4 downto 0);
        i_RegWrite    : in std_logic;
+       i_PCAddBranch         : in std_logic_vector(N-1 downto 0);
        i_imm         : in std_logic_vector(N-1 downto 0);
        i_Q           : in std_logic_vector(N-1 downto 0);
        i_O           : in std_logic_vector(N-1 downto 0);
@@ -18,6 +19,7 @@ entity ID_EX is
        i_MemRead     : in std_logic;
        i_MemtoReg    : in std_logic;
        o_RegDstMux   : out std_logic_vector(4 downto 0);
+       o_PCAddBranch         : out std_logic_vector(N-1 downto 0);
        o_imm         : out std_logic_vector(N-1 downto 0);
        o_Q           : out std_logic_vector(N-1 downto 0);
        o_O           : out std_logic_vector(N-1 downto 0);
@@ -61,6 +63,13 @@ begin
            i_WE            => i_WE,
 		       i_D             => i_RegDstMux,
            o_Q             => o_RegDstMux); 
+
+  PCAddBranch : Register_N
+	port MAP(i_CLK           => i_CLK,
+		       i_RST           => i_RST,
+           i_WE            => i_WE,
+		       i_D             => i_PCAddBranch,
+           o_Q             => o_PCAddBranch); 
 
   RegWrite : dffg
   port MAP(i_CLK           => i_CLK,

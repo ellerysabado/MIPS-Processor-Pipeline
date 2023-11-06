@@ -53,9 +53,6 @@ component dffg is
 
 end component;
 
-
-Signal s_ALUSrc : std_logic;
-
 begin
   RegDstMux : Register_N
   generic map(N => 5)
