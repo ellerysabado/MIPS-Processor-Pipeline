@@ -1,0 +1,510 @@
+# //  Questa Sim-64
+# //  Version 2023.2_2 linux_x86_64 Jun  9 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 11:58:36 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(278): Signal "s_MemWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(302): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(353): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(412): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(410): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(406): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(415): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(430): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(467): VHDL Compiler exiting
+# End time: 11:58:36 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 11:59:33 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(302): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(353): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(412): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(410): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(406): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(415): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(430): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(457): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(467): VHDL Compiler exiting
+# End time: 11:59:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:09:34 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(302): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(348): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(353): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(412): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(410): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(406): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(415): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(430): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(457): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(467): VHDL Compiler exiting
+# End time: 12:09:34 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:09:46 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(302): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(353): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(412): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(410): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(406): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(413): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(415): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(430): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(457): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(467): VHDL Compiler exiting
+# End time: 12:09:46 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:11:48 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(302): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(353): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(413): (vcom-1348) Prefix (signal "s_Branch") of slice name is not an array.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(412): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(410): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(406): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(413): Slice name is type (error); expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(415): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(430): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(457): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(467): VHDL Compiler exiting
+# End time: 12:11:49 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 17, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:12:22 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(302): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(348): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(353): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(412): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(410): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(406): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(414): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(415): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(416): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(424): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(430): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(456): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(457): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(467): VHDL Compiler exiting
+# End time: 12:12:23 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:17:44 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(269): near ":": (vcom-1576) expecting IDENTIFIER.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(337): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(340): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(372): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(484): (vcom-1136) Unknown identifier "s_RegDstMux_WB".
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:17:44 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 18, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:18:41 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(321): Signal "s_RegWrite_WB" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(337): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(340): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(372): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:18:41 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 16, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:23:42 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(337): Signal "s_ALUSrc_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(340): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(372): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:23:43 on Nov 06,2023, Elapsed time: 0:00:01
+# Errors: 15, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:24:21 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(340): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(372): Signal "s_Branch_EX" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:24:21 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 14, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:27:33 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(340): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(379): Signal "s_MuxOutToALU" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:27:33 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 13, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:28:16 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Signal "s_RegWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Signal "s_MemtoReg_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:28:16 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:28:59 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(431): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(429): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(425): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(432): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(433): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(434): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(435): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(443): Signal "s_RegWrite_EX" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:28:59 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:32:50 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(313): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(358): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(360): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(361): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(362): Signal "s_RegDst" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(363): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(367): Signal "s_Branch" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(369): Signal "s_MemRead" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(381): Signal "s_ALUSrc" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(389): Signal "s_Mem2Reg" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:32:50 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 13, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:33:38 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(363): Signal "s_RegWr" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:33:38 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:33:48 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(475): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(476): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:33:48 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:34:01 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(449): (vcom-1141) Identifier "EX_MEM" does not identify a component declaration.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): VHDL Compiler exiting
+# End time: 12:34:01 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:35:05 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(485): Signal "s_MemWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(486): Signal "s_MemRead_MEM" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(507): VHDL Compiler exiting
+# End time: 12:35:05 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:35:53 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_MemWrite_MEM" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(507): VHDL Compiler exiting
+# End time: 12:35:53 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 12:36:03 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 12:36:03 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

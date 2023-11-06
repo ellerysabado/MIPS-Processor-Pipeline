@@ -104,6 +104,7 @@ begin
            o_Q             => o_ALUOp);        
 
   Branch : Register_N
+  generic map(N => 1)
 	port MAP(i_CLK           => i_CLK,
 		       i_RST           => i_RST,
            i_WE            => i_WE,

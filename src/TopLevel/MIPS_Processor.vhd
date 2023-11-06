@@ -36,13 +36,13 @@ end  MIPS_Processor;
 architecture structure of MIPS_Processor is
 
   -- Required data memory signals
-  signal s_DMemWr       : std_logic; -- TODO: use this signal as the final active high data memory write enable signal
+  signal s_DMemWr       : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final active high data memory write enable signal
   signal s_DMemAddr     : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final data memory address input
   signal s_DMemData     : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final data memory data input
   signal s_DMemOut      : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the data memory output
  
   -- Required register file signals 
-  signal s_RegWr        : std_logic; -- TODO: use this signal as the final active high write enable input to the register file
+  signal s_RegWr        : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final active high write enable input to the register file
   signal s_RegWrAddr    : std_logic_vector(4 downto 0); -- TODO: use this signal as the final destination register address input
   signal s_RegWrData    : std_logic_vector(N-1 downto 0); -- TODO: use this signal as the final data memory data input
 
@@ -174,20 +174,19 @@ component ID_EX is
   port(i_CLK         : in std_logic;     -- Clock input
        i_RST         : in std_logic;     -- Reset input
        i_WE          : in std_logic;     -- Write enable input
-       i_rd          : in std_logic_vector(N-1 downto 0);
-       i_rt          : in std_logic_vector(N-1 downto 0);
+       i_RegWrite    : in std_logic_vector(N-1 downto 0);
        i_imm         : in std_logic_vector(N-1 downto 0);
        i_Q           : in std_logic_vector(N-1 downto 0);
        i_O           : in std_logic_vector(N-1 downto 0);
        i_ALUSrc      : in std_logic_vector(N-1 downto 0);
        i_ALUOp       : in std_logic_vector(N-1 downto 0);
-       i_RegDst      : in std_logic_vector(N-1 downto 0);
+       i_RegDstMux   : in std_logic_vector(N-1 downto 0);
        i_Branch      : in std_logic_vector(N-1 downto 0);
        i_MemWrite    : in std_logic_vector(N-1 downto 0);
        i_MemRead     : in std_logic_vector(N-1 downto 0);
        i_MemtoReg    : in std_logic_vector(N-1 downto 0);
-       o_rd          : out std_logic_vector(N-1 downto 0);
-       o_rt          : out std_logic_vector(N-1 downto 0);
+       o_RegDstMux   : out std_logic_vector(N-1 downto 0);
+       o_RegWrite    : out std_logic_vector(N-1 downto 0);
        o_imm         : out std_logic_vector(N-1 downto 0);
        o_Q           : out std_logic_vector(N-1 downto 0);
        o_O           : out std_logic_vector(N-1 downto 0);
@@ -197,6 +196,27 @@ component ID_EX is
        o_Branch      : out std_logic_vector(N-1 downto 0);
        o_MemWrite    : out std_logic_vector(N-1 downto 0);
        o_MemRead     : out std_logic_vector(N-1 downto 0);
+       o_MemtoReg    : out std_logic_vector(N-1 downto 0));
+end component;
+
+component EX_MEM is
+  generic(N : integer := 32);
+  port(i_CLK        : in std_logic;     -- Clock input
+       i_RST        : in std_logic;     -- Reset input
+       i_WE         : in std_logic;     -- Write enable input
+       i_RegDstMux  : in std_logic_vector(N-1 downto 0);
+       i_O          : in std_logic_vector(N-1 downto 0);
+       i_ALUout     : in std_logic_vector(N-1 downto 0);
+       i_MemWrite   : in std_logic_vector(N-1 downto 0);
+       i_MemRead    : in std_logic_vector(N-1 downto 0);
+       i_MemtoReg    : in std_logic_vector(N-1 downto 0);
+       i_RegWrite   : in std_logic_vector(N-1 downto 0);
+       o_RegDstMux  : out std_logic_vector(N-1 downto 0);
+       o_O          : out std_logic_vector(N-1 downto 0);
+       o_ALUout     : out std_logic_vector(N-1 downto 0);
+       o_MemWrite   : out std_logic_vector(N-1 downto 0);
+       o_MemRead    : out std_logic_vector(N-1 downto 0);
+       o_RegWrite   : out std_logic_vector(N-1 downto 0);
        o_MemtoReg    : out std_logic_vector(N-1 downto 0));
 end component;
 
@@ -225,33 +245,51 @@ signal  s_RegOutData  	   :  std_logic_vector(31 downto 0);
 signal  s_imm16            :  std_logic_vector(15 downto 0);
 signal  s_imm32 	   :  std_logic_vector(31 downto 0);
 signal  s_MuxOutToALU      :  std_logic_vector(N-1 downto 0);
-signal  s_ALUSrc           :  std_logic;
+signal  s_ALUSrc           :  std_logic_vector(N-1 downto 0);
 signal  s_ALUControl 	   :  std_logic_vector(3 downto 0);
-signal  s_Mem2Reg    	   :  std_logic;
+signal  s_Mem2Reg    	   :  std_logic_vector(N-1 downto 0);
 signal  s_MemWrite  	   :  std_logic;
-signal  s_RegDst    	   :  std_logic;                   
+signal  s_RegDst    	   :  std_logic_vector(N-1 downto 0);                   
 signal  s_Jump       	   :  std_logic;
 signal  s_JumpLink   	   :  std_logic;
 signal  s_JumpReg    	   :  std_logic;
-signal  s_Branch    	   :  std_logic;
+signal  s_Branch    	   :  std_logic_vector(N-1 downto 0);
 signal  s_ExtSelect 	   :  std_logic;
-signal	s_MemRead    	   :  std_logic;
+signal	s_MemRead    	   :  std_logic_vector(N-1 downto 0);
 signal  s_PC               :  std_logic_vector(N-1 downto 0);     
 signal  s_branchAddr 	   :  std_logic_vector(N-1 downto 0);         
 signal  s_jrAddr           :  std_logic_vector(N-1 downto 0); 
 signal  s_PCsrc  	   :  std_logic;
 signal  s_Zero  	   :  std_logic;
-signal  s_PCoutput, s_pcDEL, s_Data       :  std_logic_vector(N-1 downto 0); 
-signal  s_PCAdd, s_InstMem  :  std_logic_vector(N-1 downto 0);
-signal  s_imm, s_Q, s_O, s_PCAddBranch    :  std_logic_vector(N-1 downto 0);
+signal  s_PCoutput       :  std_logic_vector(N-1 downto 0); 
+signal  s_Data       :  std_logic_vector(N-1 downto 0); 
+signal  s_pcDEL       :  std_logic_vector(N-1 downto 0); 
+signal  s_PCAdd  :  std_logic_vector(N-1 downto 0);
+signal  s_InstMem  :  std_logic_vector(N-1 downto 0);
+signal  s_imm_EX    :  std_logic_vector(N-1 downto 0);
+signal  s_Q_EX    :  std_logic_vector(N-1 downto 0);
+signal  s_O_EX    :  std_logic_vector(N-1 downto 0);
+signal  s_PCAddBranch    :  std_logic_vector(N-1 downto 0);
 signal s_ALUOp_EX	   :  std_logic_vector(3 downto 0); 
-signal s_ALUSrc_EX, s_Branch_EX, s_MemWrite_EX, s_MemRead_EX, s_MemtoReg_EX  :  std_logic;
-signal s_O_MEM, s_ALUout_MEM :  std_logic_vector(N-1 downto 0);
-signal s_MemWrite_MEM, s_MemRead_MEM, s_RegWrite_MEM, s_RegWrite_EX :  std_logic;
-
-signal  s_RegWrite_WB, s_MemtoReg_WB  :  std_logic;
-signal  s_ALUout_WB, s_MemReadData_WB :  std_logic_vector(N-1 downto 0);
-signal  s_RegDstMux_WB, s_RegDstMux_EX, s_RegDstMux_MEM :  std_logic_vector(5 downto 0);
+signal s_ALUSrc_EX  :  std_logic_vector(N-1 downto 0);
+signal s_Branch_EX  :  std_logic_vector(N-1 downto 0);
+signal s_MemWrite_EX   :  std_logic_vector(N-1 downto 0);
+signal s_MemRead_EX  :  std_logic_vector(N-1 downto 0);
+signal s_MemtoReg_EX  :  std_logic_vector(N-1 downto 0);
+signal s_ALUout_MEM :  std_logic_vector(N-1 downto 0);
+signal s_O_MEM  :  std_logic_vector(N-1 downto 0);
+signal s_MemWrite_MEM :  std_logic_vector(N-1 downto 0);
+signal s_MemRead_MEM :  std_logic_vector(N-1 downto 0);
+signal s_RegWrite_MEM :  std_logic_vector(N-1 downto 0);
+signal s_RegWrite_EX :  std_logic_vector(N-1 downto 0);
+signal s_MemtoReg_MEM :  std_logic_vector(N-1 downto 0);
+signal s_RegWrite_WB  :  std_logic_vector(N-1 downto 0);
+signal s_MemtoReg_WB  :  std_logic_vector(N-1 downto 0);
+signal s_MemReadData_WB :  std_logic_vector(N-1 downto 0);
+signal s_ALUout_WB  :  std_logic_vector(N-1 downto 0);
+signal s_RegDstMux_WB :  std_logic_vector(N-1 downto 0);
+signal s_RegDstMux_EX :  std_logic_vector(N-1 downto 0);
+signal s_RegDstMux_MEM :  std_logic_vector(N-1 downto 0);
 
 
 begin
@@ -277,7 +315,7 @@ begin
     port map(clk  => iCLK,
              addr => s_ALUout_MEM(11 downto 2),
              data => s_O_MEM,
-             we   => s_MemWrite_MEM,
+             we   => s_MemWrite_MEM(0),
              q    => s_DMemOut);
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
@@ -293,7 +331,7 @@ port map(i_data	=> s_Inst(15 downto 0),
 
 g_MuxWriteReg: mux2t1_N
 generic map(N => 5)
-port map(i_S		=> s_RegDst,
+port map(i_S		=> s_RegDst(0),
 	i_D0		=> s_Inst(20 downto 16),
 	i_D1		=> s_Inst(15 downto 11),
 	o_O		=> s_RD);
@@ -301,7 +339,7 @@ port map(i_S		=> s_RegDst,
 g_RegisterFile: RegFile
 port map(i_CLK		=> iCLK,
 	i_RST		=> iRST,
-	i_WE		=> s_RegWrite_WB,
+	i_WE		=> s_RegWrite_WB(0),
 	i_D		=> s_RegWrData,
 	i_RS		=> s_Inst(25 downto 21),
 	i_RT		=> s_Inst(20 downto 16),
@@ -317,7 +355,7 @@ port map(i_CLK       => iCLK,
        o_Q           => s_NextInstAddr);
 
 g_MuxtoALU: mux2t1_N
-port map(i_S		=> s_ALUSrc_EX,
+port map(i_S		=> s_ALUSrc_EX(0),
 	i_D0		=> s_O_EX,
 	i_D1		=> s_imm_EX,
 	o_O		=> s_MuxOutToALU);
@@ -338,21 +376,21 @@ port map(i_CLK		=> iCLK,
 g_ControlUnit: Control
 port map(i_OpCode      => s_Inst(31 downto 26),   
        i_Function      => s_Inst(5 downto 0),   
-       o_ALUSrc        => s_ALUSrc, 
+       o_ALUSrc        => s_ALUSrc(0), 
        o_ALUControl    => s_ALUControl, 
-       o_Mem2Reg       => s_Mem2Reg,
-       o_MemWrite      => s_DMemWr, 
-       o_RegDst        => s_RegDst,
-       o_RegWrite      => s_RegWr,                   
+       o_Mem2Reg       => s_Mem2Reg(0),
+       o_MemWrite      => s_DMemWr(0), 
+       o_RegDst        => s_RegDst(0),
+       o_RegWrite      => s_RegWr(0),                   
        o_Jump          => s_Jump,
        o_JumpLink      => s_JumpLink,
        o_JumpReg       => s_JumpReg,
-       o_Branch        => s_Branch,
+       o_Branch        => s_Branch(0),
        o_ExtSelect     => s_ExtSelect,
-       o_MemRead       => s_MemRead );
+       o_MemRead       => s_MemRead(0));
 
 g_andGate: andg2
-port map(i_A            => s_Branch_EX,
+port map(i_A            => s_Branch_EX(0),
        i_B              => s_Zero,
        o_F              => s_PCSrc);
 
@@ -361,7 +399,7 @@ port map(alucontrol	=> s_ALUOp_EX,
 	i_iput1		=> s_O_EX,
 	i_iput2		=> s_MuxOutToALU,
 	i_shamt 	=> s_Inst(10 DOWNTO 6),
-	ALUSrc		=> s_ALUSrc,    
+	ALUSrc		=> s_ALUSrc(0),    
 	o_over		=> s_Ovfl,
 	o_ZERO		=> s_Zero,
 	o_ASum		=> oALUOut);
@@ -369,7 +407,7 @@ port map(alucontrol	=> s_ALUOp_EX,
 s_DMemAddr <= oALUOut;
 
 g_MuxMemToReg: mux2t1_N
-port map(i_S		=> s_Mem2Reg,
+port map(i_S		=> s_Mem2Reg(0),
 	i_D0		=> s_ALUout_WB,
 	i_D1		=> s_MemReadData_WB,
 	o_O		=> s_RegWrData);
@@ -405,18 +443,18 @@ g_ID_EX: ID_EX
   port map(i_CLK          => iCLK,
         i_RST        	=> iRST,
         i_WE          	=> '1',
-        i_RegDstMux   => s_RD,
+        i_RegDstMux   => s_RegDst,
         i_imm        	=> s_imm32,
         i_Q           	=> s_RegOutData,
         i_O           	=> s_DMemData,
         i_ALUSrc      	=> s_ALUSrc,
-        i_ALUOp       	=> s_Inst(31 downto 26)
-        i_RegWrite      	=> s_RegWr ,
+        i_ALUOp       	=> s_Inst(31 downto 26),
+        i_RegWrite      	=> s_RegWr,
         i_Branch      	=> s_Branch,
         i_MemWrite    	=> s_DMemWr,
         i_MemRead     	=> s_MemRead,
         i_MemtoReg   	=> s_Mem2Reg,
-        o_imm         	=> s_imm,
+        o_imm         	=> s_imm_EX,
         o_Q          	=> s_Q_EX,
         o_O           	=> s_O_EX,
         o_ALUSrc      	=> s_ALUSrc_EX,
@@ -441,12 +479,12 @@ port map(i_CLK    	=> iCLK,
         i_MemRead    	=> s_MemRead_EX,
         i_RegWrite   	=> s_RegWrite_EX,
         i_MemToReg    => s_MemtoReg_EX,
-        o_RegDstMux 	=> s_RegDstMux_MEM
+        o_RegDstMux 	=> s_RegDstMux_MEM,
         o_O         	=> s_O_MEM,
         o_ALUout     	=> s_ALUout_MEM,
         o_MemWrite   	=> s_MemWrite_MEM, 
         o_MemRead   	=> s_MemRead_MEM,
-        o_RegWrite   	=> s_RegWrite_MEM
+        o_RegWrite   	=> s_RegWrite_MEM,
         o_MemtoReg    => s_MemtoReg_MEM);
 
 g_MEM_WB: MEM_WB 
