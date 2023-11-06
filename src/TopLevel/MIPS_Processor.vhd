@@ -278,6 +278,7 @@ signal s_MemRead_EX  :  std_logic;
 signal s_MemtoReg_EX  :  std_logic;
 signal s_ALUout_MEM :  std_logic_vector(N-1 downto 0);
 signal s_O_MEM  :  std_logic_vector(N-1 downto 0);
+signal s_Inst_ID  :  std_logic_vector(N-1 downto 0);
 signal s_MemWrite_MEM :  std_logic;
 signal s_MemRead_MEM :  std_logic;
 signal s_RegWrite_MEM :  std_logic;
@@ -325,15 +326,15 @@ with s_Inst select
   -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
   -- TODO: Implement the rest of your processor below this comment! 
 g_extender: Extender 
-port map(i_data	=> s_Inst(15 downto 0),
+port map(i_data	=> s_Inst_ID(15 downto 0),
 	sel	=> s_ExtSelect,
 	o_data	=> s_imm32);
 
 g_MuxWriteReg: mux2t1_N
 generic map(N => 5)
 port map(i_S		=> s_RegDst,
-	i_D0		=> s_Inst(20 downto 16),
-	i_D1		=> s_Inst(15 downto 11),
+	i_D0		=> s_Inst_ID(20 downto 16),
+	i_D1		=> s_Inst_ID(15 downto 11),
 	o_O		=> s_RD);
 
 g_RegisterFile: RegFile
@@ -341,8 +342,8 @@ port map(i_CLK		=> iCLK,
 	i_RST		=> iRST,
 	i_WE		=> s_RegWrite_WB,
 	i_D		=> s_RegWrData,
-	i_RS		=> s_Inst(25 downto 21),
-	i_RT		=> s_Inst(20 downto 16),
+	i_RS		=> s_Inst_ID(25 downto 21),
+	i_RT		=> s_Inst_ID(20 downto 16),
 	i_RD		=> s_RegWrData(15 downto 11),
 	o_Q		=> s_RegOutData,
 	o_O		=> s_DMemData);
@@ -374,8 +375,8 @@ port map(i_CLK		=> iCLK,
 
 
 g_ControlUnit: Control
-port map(i_OpCode      => s_Inst(31 downto 26),   
-       i_Function      => s_Inst(5 downto 0),   
+port map(i_OpCode      => s_Inst_ID(31 downto 26),   
+       i_Function      => s_Inst_ID(5 downto 0),   
        o_ALUSrc        => s_ALUSrc, 
        o_ALUControl    => s_ALUControl, 
        o_Mem2Reg       => s_Mem2Reg,
@@ -398,8 +399,8 @@ g_completeALU: CompleteALU
 port map(alucontrol	=> s_ALUOp_EX,
 	i_iput1		=> s_O_EX,
 	i_iput2		=> s_MuxOutToALU,
-	i_shamt 	=> s_Inst(10 DOWNTO 6),
-	ALUSrc		=> s_ALUSrc,    
+	i_shamt 	=> s_imm_EX(10 DOWNTO 6),
+	ALUSrc		=> s_ALUSrc_EX,    
 	o_over		=> s_Ovfl,
 	o_ZERO		=> s_Zero,
 	o_ASum		=> oALUOut);
@@ -435,7 +436,7 @@ port map(i_CLK		=> iCLK,
        i_PCAdd   	=> s_PCoutput,
        i_InstMem    	=> s_InstMem,
        o_PCAdd     	=> s_PCAdd,
-       o_InstMem  	=> s_Inst);
+       o_InstMem  	=> s_Inst_ID);
 
 g_ID_EX: ID_EX 
   port map(i_CLK          => iCLK,
@@ -491,7 +492,7 @@ PORT map (
     i_WE             => '1', 
     i_RegWrite       => s_RegWrite_MEM,
     i_MemtoReg       => s_MemtoReg_MEM,
-    i_MemReadData    => s_DMemData,
+    i_MemReadData    => s_DMemOut,
     i_ALUout         => s_ALUout_MEM,
     i_RegDstMux      => s_RegDstMux_MEM, 
     o_RegWrite       => s_RegWrite_WB,

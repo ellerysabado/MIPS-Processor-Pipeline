@@ -1369,3 +1369,16 @@ vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_part
 # -- Compiling architecture structure of MIPS_Processor
 # End time: 14:39:18 on Nov 06,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 14:46:54 on Nov 06,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 14:46:54 on Nov 06,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
