@@ -261,7 +261,7 @@ generic(N : integer := 32);
 END component;
 
 --Extra Added Signals 
-signal  s_RS, s_RT, s_RD         :  std_logic_vector(4 downto 0);     
+signal  s_RD         :  std_logic_vector(4 downto 0);     
 signal  s_RegOutData  	   :  std_logic_vector(31 downto 0);
 signal  s_imm16            :  std_logic_vector(15 downto 0);
 signal  s_imm32 	   :  std_logic_vector(31 downto 0);
@@ -435,7 +435,7 @@ port map(alucontrol	=> s_ALUOp_EX,
 	o_ZERO		=> s_Zero,
 	o_ASum		=> oALUOut);
 
-s_DMemAddr <= oALUOut;
+s_DMemAddr <= s_ALUout_MEM;
 
 g_MuxMemToReg: mux2t1_N
 port map(i_S		=> s_MemtoReg_WB,

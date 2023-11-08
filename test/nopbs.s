@@ -10,41 +10,74 @@ main:
     lui     $s0, 0x1001    
     nop
     nop
+    nop
     ori     $s0, $s0, 0x0000 
-    lw      $s1, size
+    lui     $1, 4097
+    nop 
+    nop
+    nop
+    lw      $s1, 0($1)
+    nop
+    nop
     addi    $t7, $zero,  0
 outer_loop:
     beq     $t0, $s1, exit
     nop
+    nop
     sub     $t7, $s1,    $t0
+    nop
     nop
     nop
     addi    $t7, $t7,    -1
     add     $t1, $zero,  $zero
+    nop
+    nop
+    nop
 inner_loop:
     beq     $t1, $t7,    continue
+    nop
     nop
     sll     $t6, $t1,    2
     nop
     nop
+    nop
     add     $t6, $s0,    $t6
+    nop
+    nop
+    nop
     lw      $s2, 0($t6)
     lw      $s3, 4($t6)
+    nop
     nop
     nop
     slt     $t2, $s3,    $s2
     nop
     nop
+    nop
     beq     $t2,        $zero,  sorted
     nop
+    nop
     sw      $s3,        0($t6)
+    nop
+    nop
+    nop
     sw      $s2,        4($t6)
 sorted:
     addi    $t1,        $t1,    1
+    nop
+    nop
+    nop
     j       inner_loop
+    nop
+    nop
 continue:
     addi    $t0,        $t0,    1
+    nop
+    nop
+    nop
     j       outer_loop
+    nop
+    nop
 exit: 
-    li $v0, 10
-    syscall
+
+halt
