@@ -9,7 +9,7 @@ entity HazardDetectionUnit is
         ID_EX_RegisterRt   : in std_logic_vector(4 downto 0);
         IF_ID_RegisterRs   : in std_logic_vector(4 downto 0);
         IF_ID_RegisterRt   : in std_logic_vector(4 downto 0);
-        ControlUnitMUX     : in std_logic;
+        ControlMUXSel     : in std_logic;
         PCWrite            
         IF_ID_Write
 

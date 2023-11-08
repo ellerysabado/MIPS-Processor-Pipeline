@@ -46,3 +46,39 @@ vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part
 # -- Compiling architecture Dataflow of mux3to1
 # End time: 14:58:15 on Nov 08,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:17:21 on Nov 08,2023
+# vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux3to1
+# -- Compiling architecture Dataflow of mux3to1
+# End time: 15:17:21 on Nov 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:17:25 on Nov 08,2023
+# vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# ** Error: /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd(15): (vcom-1136) Unknown identifier "ForwardB".
+# ** Error: /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd(15): Bad resolution function (STD_LOGIC_VECTOR) for type (error).
+# ** Error: /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd(15): near ":": (vcom-1576) expecting ';' or ')'.
+# ** Note: /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd(15): VHDL Compiler exiting
+# End time: 15:17:25 on Nov 08,2023, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 15:17:46 on Nov 08,2023
+# vcom -reportprogress 300 -work work /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ForwardingUnit
+# -- Compiling architecture Behavioral of ForwardingUnit
+# End time: 15:17:46 on Nov 08,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
