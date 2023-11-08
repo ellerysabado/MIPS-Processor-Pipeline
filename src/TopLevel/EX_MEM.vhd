@@ -7,6 +7,7 @@ entity EX_MEM is
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
+       i_Inst_EX           : in std_logic_vector(N-1 downto 0);
        i_RegDstMux  : in std_logic_vector(4 downto 0);
        i_O          : in std_logic_vector(N-1 downto 0);
        i_ALUout     : in std_logic_vector(N-1 downto 0);
@@ -14,6 +15,7 @@ entity EX_MEM is
        i_MemRead    : in std_logic;
        i_MemtoReg    : in std_logic;
        i_RegWrite   : in std_logic;
+       o_Inst_EX           : out std_logic_vector(N-1 downto 0);
        o_RegDstMux  : out std_logic_vector(4 downto 0);
        o_O          : out std_logic_vector(N-1 downto 0);
        o_ALUout     : out std_logic_vector(N-1 downto 0);
@@ -49,6 +51,13 @@ end component;
 
 
 begin
+
+  Inst_EX : Register_N
+	port MAP(i_CLK           => i_CLK,
+		       i_RST           => i_RST,
+           i_WE            => i_WE,
+		       i_D             => i_Inst_EX,
+           o_Q             => o_Inst_EX); 
 
   RegDstMux : Register_N
   generic map(N => 5)

@@ -185,6 +185,7 @@ component ID_EX is
   port(i_CLK         : in std_logic;     -- Clock input
        i_RST         : in std_logic;     -- Reset input
        i_WE          : in std_logic;     -- Write enable input
+       i_Inst_ID           : in std_logic_vector(N-1 downto 0);
        i_RegDstMux   : in std_logic_vector(4 downto 0);
        i_RegWrite    : in std_logic;
        i_PCAddBranch         : in std_logic_vector(N-1 downto 0);
@@ -197,6 +198,7 @@ component ID_EX is
        i_MemWrite    : in std_logic;
        i_MemRead     : in std_logic;
        i_MemtoReg    : in std_logic;
+       o_Inst_ID           : out std_logic_vector(N-1 downto 0);
        o_RegDstMux   : out std_logic_vector(4 downto 0);
        o_PCAddBranch         : out std_logic_vector(N-1 downto 0);
        o_imm         : out std_logic_vector(N-1 downto 0);
@@ -218,6 +220,7 @@ component EX_MEM is
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
+       i_Inst_EX           : in std_logic_vector(N-1 downto 0);
        i_RegDstMux  : in std_logic_vector(4 downto 0);
        i_O          : in std_logic_vector(N-1 downto 0);
        i_ALUout     : in std_logic_vector(N-1 downto 0);
@@ -225,6 +228,7 @@ component EX_MEM is
        i_MemRead    : in std_logic;
        i_MemtoReg    : in std_logic;
        i_RegWrite   : in std_logic;
+       o_Inst_EX           : out std_logic_vector(N-1 downto 0);
        o_RegDstMux  : out std_logic_vector(4 downto 0);
        o_O          : out std_logic_vector(N-1 downto 0);
        o_ALUout     : out std_logic_vector(N-1 downto 0);
@@ -240,11 +244,13 @@ generic(N : integer := 32);
     i_CLK : IN STD_LOGIC; -- Clock input
     i_RST : IN STD_LOGIC; -- Reset input
     i_WE : IN STD_LOGIC; -- Write enable input
-    i_RegWrite : OUT STD_LOGIC;
+    i_Inst_MEM           : IN std_logic_vector(N-1 downto 0);
+    i_RegWrite : IN STD_LOGIC;
     i_MemToReg : IN STD_LOGIC;
     i_MemReadData : IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
     i_ALUout : IN STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
     i_RegDstMux : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+    o_Inst_MEM           : OUT std_logic_vector(N-1 downto 0);
     o_RegWrite : OUT STD_LOGIC;
     o_MemToReg : OUT STD_LOGIC;
     o_MemReadData : OUT STD_LOGIC_VECTOR(N - 1 DOWNTO 0);
@@ -288,7 +294,7 @@ signal s_ALUSrc_EX  :  std_logic;
 signal s_Branch_EX  :  std_logic;
 signal s_MemWrite_EX   :  std_logic;
 signal s_MemRead_EX  :  std_logic;
-signal s_MemtoReg_EX  :  std_logic;
+signal s_MemtoReg_EX, s_RegWr_ID  :  std_logic;
 signal s_ALUout_MEM :  std_logic_vector(N-1 downto 0);
 signal s_O_MEM  :  std_logic_vector(N-1 downto 0);
 signal s_Inst_ID  :  std_logic_vector(N-1 downto 0);
@@ -304,7 +310,7 @@ signal s_ALUout_WB  :  std_logic_vector(N-1 downto 0);
 signal s_RegDstMux_WB :  std_logic_vector(4 downto 0);
 signal s_RegDstMux_EX :  std_logic_vector(4 downto 0);
 signal s_RegDstMux_MEM :  std_logic_vector(4 downto 0);
-
+signal s_Inst_EX, s_Inst_MEM, s_Inst_WB  :  std_logic_vector(N-1 downto 0);
 
 begin
 
@@ -333,7 +339,7 @@ begin
              q    => s_DMemOut);
 
   -- TODO: Ensure that s_Halt is connected to an output control signal produced from decoding the Halt instruction (Opcode: 01 0100)
-with s_Inst select
+with s_Inst_WB select
     s_Halt <= '1' when x"50000000",
       '0' when others;
   -- TODO: Ensure that s_Ovfl is connected to the overflow output of your ALU
@@ -353,11 +359,11 @@ port map(i_S		=> s_RegDst,
 g_RegisterFile: RegFile
 port map(i_CLK		=> iCLK,
 	i_RST		=> iRST,
-	i_WE		=> s_RegWrite_WB,
+	i_WE		=> s_RegWr,
 	i_D		=> s_RegWrData,
 	i_RS		=> s_Inst_ID(25 downto 21),
 	i_RT		=> s_Inst_ID(20 downto 16),
-	i_RD		=> s_RegWrData(15 downto 11),
+	i_RD		=> s_RegDstMux_WB,
 	o_Q		=> s_RegOutData,
 	o_O		=> s_DMemData);
 
@@ -406,7 +412,7 @@ port map(i_OpCode      => s_Inst_ID(31 downto 26),
        o_Mem2Reg       => s_Mem2Reg,
        o_MemWrite      => s_DMemWr, 
        o_RegDst        => s_RegDst,
-       o_RegWrite      => s_RegWr,                   
+       o_RegWrite      => s_RegWr_ID,                   
        o_Jump          => s_Jump,
        o_JumpLink      => s_JumpLink,
        o_JumpReg       => s_JumpReg,
@@ -421,7 +427,7 @@ port map(i_A            => s_Branch_EX,
 
 g_completeALU: CompleteALU
 port map(alucontrol	=> s_ALUOp_EX,
-	i_iput1		=> s_O_EX,
+	i_iput1		=> s_Q_EX,
 	i_iput2		=> s_MuxOutToALU,
 	i_shamt 	=> s_imm_EX(10 DOWNTO 6),
 	ALUSrc		=> s_ALUSrc_EX,    
@@ -449,7 +455,7 @@ g_jumplinkMUX1: mux2t1_N
 generic map(N => 5) 
 port map (
     i_S  => s_JumpLink,
-    i_D0 => s_RD,      
+    i_D0 => s_RegDstMux_WB,      
     i_D1 => "11111",     
     o_O  => s_RegWrAddr);
 
@@ -458,7 +464,7 @@ port map(i_CLK		=> iCLK,
        i_RST    	=> iRST,    
        i_WE     	=> '1',    
        i_PCAdd   	=> s_PCoutput,
-       i_InstMem    	=> s_InstMem,
+       i_InstMem    	=> s_Inst,
        o_PCAdd     	=> s_PCAdd,
        o_InstMem  	=> s_Inst_ID);
 
@@ -466,6 +472,7 @@ g_ID_EX: ID_EX
   port map(i_CLK          => iCLK,
         i_RST        	=> iRST,
         i_WE          	=> '1',
+        i_Inst_ID       => s_Inst_ID,
         i_PCAddBranch  => s_PCAddBranch,
         i_RegDstMux   => s_RD,
         i_imm        	=> s_imm32,
@@ -473,11 +480,12 @@ g_ID_EX: ID_EX
         i_O           	=> s_DMemData,
         i_ALUSrc      	=> s_ALUSrc,
         i_ALUOp       	=> s_ALUControl,
-        i_RegWrite      	=> s_RegWr,
+        i_RegWrite      	=> s_RegWr_ID,
         i_Branch      	=> s_Branch,
         i_MemWrite    	=> s_DMemWr,
         i_MemRead     	=> s_MemRead,
         i_MemtoReg   	=> s_Mem2Reg,
+        o_Inst_ID       => s_Inst_EX,
         o_PCAddBranch   => s_PCAddBranch_EX,
         o_imm         	=> s_imm_EX,
         o_Q          	=> s_Q_EX,
@@ -496,6 +504,7 @@ g_EX_MEM: EX_MEM
 port map(i_CLK    	=> iCLK,    
         i_RST       	=> iRST,
         i_WE       	=> '1',
+        i_Inst_EX     => s_Inst_EX,
         i_RegDstMux  	=> s_RegDstMux_EX,
         i_O         	=> s_O_EX,
         i_ALUout     	=> oALUOut,
@@ -503,6 +512,7 @@ port map(i_CLK    	=> iCLK,
         i_MemRead    	=> s_MemRead_EX,
         i_RegWrite   	=> s_RegWrite_EX,
         i_MemToReg    => s_MemtoReg_EX,
+        o_Inst_EX     => s_Inst_MEM,
         o_RegDstMux 	=> s_RegDstMux_MEM,
         o_O         	=> s_O_MEM,
         o_ALUout     	=> s_ALUout_MEM,
@@ -516,12 +526,14 @@ PORT map (
     i_CLK            => iCLK,
     i_RST            => iRST,
     i_WE             => '1', 
+    i_Inst_MEM        => s_Inst_MEM,
     i_RegWrite       => s_RegWrite_MEM,
     i_MemtoReg       => s_MemtoReg_MEM,
     i_MemReadData    => s_DMemOut,
     i_ALUout         => s_ALUout_MEM,
     i_RegDstMux      => s_RegDstMux_MEM, 
-    o_RegWrite       => s_RegWrite_WB,
+    o_Inst_MEM       => s_Inst_WB,
+    o_RegWrite       => s_RegWr,
     o_MemtoReg       => s_MemtoReg_WB,
     o_MemReadData    => s_MemReadData_WB,
     o_ALUout         => s_ALUout_WB,

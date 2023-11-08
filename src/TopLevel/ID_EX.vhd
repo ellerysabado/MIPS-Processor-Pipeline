@@ -6,6 +6,7 @@ entity ID_EX is
   port(i_CLK         : in std_logic;     -- Clock input
        i_RST         : in std_logic;     -- Reset input
        i_WE          : in std_logic;     -- Write enable input
+       i_Inst_ID           : in std_logic_vector(N-1 downto 0);
        i_RegDstMux   : in std_logic_vector(4 downto 0);
        i_RegWrite    : in std_logic;
        i_PCAddBranch         : in std_logic_vector(N-1 downto 0);
@@ -18,6 +19,7 @@ entity ID_EX is
        i_MemWrite    : in std_logic;
        i_MemRead     : in std_logic;
        i_MemtoReg    : in std_logic;
+       o_Inst_ID           : out std_logic_vector(N-1 downto 0);
        o_RegDstMux   : out std_logic_vector(4 downto 0);
        o_PCAddBranch         : out std_logic_vector(N-1 downto 0);
        o_imm         : out std_logic_vector(N-1 downto 0);
@@ -56,6 +58,13 @@ component dffg is
 end component;
 
 begin
+  Inst_ID : Register_N
+	port MAP(i_CLK           => i_CLK,
+		       i_RST           => i_RST,
+           i_WE            => i_WE,
+		       i_D             => i_Inst_ID,
+           o_Q             => o_Inst_ID); 
+
   RegDstMux : Register_N
   generic map(N => 5)
 	port MAP(i_CLK           => i_CLK,

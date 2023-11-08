@@ -14,7 +14,7 @@
 # //
 vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:03:12 on Nov 06,2023
+# Start time: 19:02:05 on Nov 07,2023
 # vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -23,72 +23,7 @@ vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_part
 # -- Loading package MIPS_types
 # -- Compiling entity MIPS_Processor
 # -- Compiling architecture structure of MIPS_Processor
-# End time: 13:03:12 on Nov 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:07:04 on Nov 06,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(318): Signal "s_DMemWr" is type ieee.std_logic_1164.STD_LOGIC_VECTOR; expecting type ieee.std_logic_1164.STD_LOGIC.
-# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(507): VHDL Compiler exiting
-# End time: 13:07:04 on Nov 06,2023, Elapsed time: 0:00:00
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(515): (vcom-1484) Unknown formal identifier "o_RegDstMux".
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(521): VHDL Compiler exiting
+# End time: 19:02:05 on Nov 07,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:07:12 on Nov 06,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 13:07:12 on Nov 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:11:23 on Nov 06,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 13:11:23 on Nov 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:20:28 on Nov 06,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 13:20:28 on Nov 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 13:20:29 on Nov 06,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# End time: 13:20:29 on Nov 06,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
