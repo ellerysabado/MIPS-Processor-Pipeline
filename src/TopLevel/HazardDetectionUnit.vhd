@@ -1,23 +1,24 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.STD_LOGIC_ARITH.ALL;
-use IEEE.STD_LOGIC_UNSIGNED.ALL;
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-entity HazardDetectionUnit is
-    Port (
-        ID_EX_MemRead      : in std_logic;
-        ID_EX_RegisterRt   : in std_logic_vector(4 downto 0);
-        IF_ID_RegisterRs   : in std_logic_vector(4 downto 0);
-        IF_ID_RegisterRt   : in std_logic_vector(4 downto 0);
-        ControlMUXSel      : out std_logic;
-        PCWrite            : out std_logic; 
-        IF_ID_Write        : out std_logic;
+ENTITY HazardDetectionUnit IS
+    PORT (
+        ID_EX_MemRead    : IN STD_LOGIC;
+        ID_EX_RegisterRt : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        IF_ID_RegisterRs : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        IF_ID_RegisterRt : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        ControlMUXSel    : OUT STD_LOGIC;
+        PCWrite          : OUT STD_LOGIC;
+        IF_ID_Write      : OUT STD_LOGIC;
     );
-end HazardDetectionUnit;
+END HazardDetectionUnit;
 
-architecture Behavioral of HazardDetectionUnit is
-begin
-    -- Check for data hazards and generate the stall signal
-    StallSignal <= '1' when (ID_EX_MemRead = '1' and (ID_EX_RegisterRt = IF_ID_RegisterRs or ID_EX_RegisterRt = IF_ID_RegisterRs)) else
-                   '0';
-end Behavioral;
+ARCHITECTURE Behavioral OF HazardDetectionUnit IS
+BEGIN
+
+    IF_ID_Write <= "0" WHEN (ID_EX_MemRead = '1' AND
+        ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
+        (ID_EX_RegisterRt = IF_ID_RegisterRt)))
+    END Behavioral;
