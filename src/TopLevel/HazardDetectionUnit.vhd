@@ -12,13 +12,24 @@ ENTITY HazardDetectionUnit IS
         ControlMUXSel    : OUT STD_LOGIC;
         PCWrite          : OUT STD_LOGIC;
         IF_ID_Write      : OUT STD_LOGIC;
+        IF_Flush         : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
     );
 END HazardDetectionUnit;
 
 ARCHITECTURE Behavioral OF HazardDetectionUnit IS
 BEGIN
 
-    IF_ID_Write <= "0" WHEN (ID_EX_MemRead = '1' AND
+    ControlMUXSel <= '0' WHEN (ID_EX_MemRead = '1' AND
         ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
         (ID_EX_RegisterRt = IF_ID_RegisterRt)))
+
+    IF_ID_Write <= '0' WHEN (ID_EX_MemRead = '1' AND
+        ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
+        (ID_EX_RegisterRt = IF_ID_RegisterRt)))
+
+        IF_Flush <= x"00000000" WHEN (ID_EX_MemRead = '1' AND
+        ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
+        (ID_EX_RegisterRt = IF_ID_RegisterRt)))
+
+    
     END Behavioral;
