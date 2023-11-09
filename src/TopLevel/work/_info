@@ -467,7 +467,7 @@ Z67 !s110 1699478266
 !i10b 1
 Z68 !s108 1699478266.000000
 Z69 !s90 -reportprogress|300|-work|work|/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd|
-!s107 /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd|
+Z70 !s107 /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd|
 !i113 0
 R11
 R12
@@ -486,7 +486,7 @@ R67
 !i10b 1
 R68
 R69
-Z70 !s107 /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/ForwardingUnit.vhd|
+R70
 !i113 0
 R11
 R12
@@ -531,25 +531,70 @@ R74
 !i113 0
 R11
 R12
+Ehazarddetectionunit
+Z75 w1699560238
+R33
+R34
+R1
+R2
+!i122 209
+R3
+Z76 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/HazardDetectionUnit.vhd
+Z77 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/HazardDetectionUnit.vhd
+l0
+L6 1
+VXGFF;BDWFdOea[d4:X1hO2
+!s100 hfb1fF@2^k<beYTbFdB[L1
+R6
+33
+Z78 !s110 1699560240
+!i10b 1
+Z79 !s108 1699560240.000000
+Z80 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/HazardDetectionUnit.vhd|
+Z81 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/HazardDetectionUnit.vhd|
+!i113 0
+R11
+R12
+Abehavioral
+R33
+R34
+R1
+R2
+DEx4 work 19 hazarddetectionunit 0 22 XGFF;BDWFdOea[d4:X1hO2
+!i122 209
+l20
+L19 17
+Ve7HEe5F5ZY@QnR^3z_nH93
+!s100 6`khB7DBN9g;IgehL2NF@3
+R6
+33
+R78
+!i10b 1
+R79
+R80
+R81
+!i113 0
+R11
+R12
 Eid_ex
-Z75 w1699306363
+Z82 w1699306363
 R1
 R2
 !i122 196
 R3
-Z76 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
-Z77 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
+Z83 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
+Z84 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd
 l0
 L4 1
 VZZ<Gf7bSaG6eRadGJDcAK2
 !s100 hoGahioURh`57zCKm`_9o3
 R6
 33
-Z78 !s110 1699306468
+Z85 !s110 1699306468
 !i10b 1
-Z79 !s108 1699306468.000000
-Z80 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd|
-Z81 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd|
+Z86 !s108 1699306468.000000
+Z87 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd|
+Z88 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/ID_EX.vhd|
 !i113 0
 R11
 R12
@@ -564,52 +609,52 @@ Ve?4W2>M4bUc[9h:]2PJ<d1
 !s100 fmEZZG@[NKToigDg?kYJZ3
 R6
 33
-R78
+R85
 !i10b 1
-R79
-R80
-R81
+R86
+R87
+R88
 !i113 0
 R11
 R12
 Eif_id
-Z82 w1699039316
+Z89 w1699565907
 R1
 R2
-!i122 181
+!i122 219
 R3
-Z83 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
-Z84 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
+Z90 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
+Z91 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
 l0
 L4 1
-V:K2jZkg>algU;9REg1aWD1
-!s100 RJP5F`<z1H:[2Lf@>5T_C1
+V^5g;OGCQ_5faoCZPXPk?h3
+!s100 S2:@COWAXzP>RZb4TZ;HV1
 R6
 33
-Z85 !s110 1699302940
+Z92 !s110 1699565920
 !i10b 1
-Z86 !s108 1699302940.000000
-Z87 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd|
-Z88 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd|
+Z93 !s108 1699565920.000000
+Z94 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd|
+Z95 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd|
 !i113 0
 R11
 R12
 Adataflow
 R1
 R2
-DEx4 work 5 if_id 0 22 :K2jZkg>algU;9REg1aWD1
-!i122 181
-l29
-L16 31
-VBN0G3=3W?mDFHO_C98ZM]3
-!s100 VdHWZY1YR6f;mAZnYPigF2
+DEx4 work 5 if_id 0 22 ^5g;OGCQ_5faoCZPXPk?h3
+!i122 219
+l30
+L17 31
+VY0_:e?8_@=9ZSc;TN]FSW3
+!s100 hRi2^cK[]aUc0]hAz=`TT1
 R6
 33
-R85
+R92
 !i10b 1
-R86
-R87
-R88
+R93
+R94
+R95
 !i113 0
 R11
 R12
@@ -619,19 +664,19 @@ R1
 R2
 !i122 149
 R3
-Z89 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd
-Z90 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd
+Z96 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd
+Z97 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd
 l0
 R19
 V^IQhB0M:TibmTX48^HJa:0
 !s100 5^0jfQ^dVk:bl_Za_KajG0
 R6
 33
-Z91 !s110 1699299617
+Z98 !s110 1699299617
 !i10b 1
 R42
-Z92 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd|
-Z93 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd|
+Z99 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd|
+Z100 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/invg.vhd|
 !i113 0
 R11
 R12
@@ -646,11 +691,11 @@ VGnAN1IHi;Y?=mi4968o873
 !s100 Q?`9^ToWC]zk1[=<LdPdE3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R92
-R93
+R99
+R100
 !i113 0
 R11
 R12
@@ -661,19 +706,19 @@ R1
 R2
 !i122 127
 R3
-Z94 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd
-Z95 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd
+Z101 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd
+Z102 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd
 l0
 L8 1
 Vof;k8UOTO]0z0:Ag6`VnF3
 !s100 GF_U?1mjKdlzTC==@Eoi@2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z96 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd|
-Z97 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd|
+Z103 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd|
+Z104 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mem.vhd|
 !i113 0
 R11
 R12
@@ -689,76 +734,76 @@ V_XQBD327<9Q`ORP@466N51
 !s100 h2oZ:n@5VDnM^B7>cA]W22
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R96
-R97
+R103
+R104
 !i113 0
 R11
 R12
 Emem_wb
-Z98 w1699302908
+Z105 w1699560150
 R1
 R2
-!i122 184
+!i122 204
 R3
-Z99 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd
-Z100 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd
+Z106 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd
+Z107 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd
 l0
 L4 1
-ViZK;mD@PUaeU9okcAJHB_2
-!s100 >7E;9SgCYL:a?UhW4EQB42
+VLYKTSi`F?Nmk`;7N=z:8Q3
+!s100 NCnJN^I]^H1]FJF6ncIYP1
 R6
 33
-Z101 !s110 1699302944
+Z108 !s110 1699560216
 !i10b 1
-Z102 !s108 1699302944.000000
-Z103 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd|
-Z104 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd|
+Z109 !s108 1699560216.000000
+Z110 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd|
+Z111 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MEM_WB.vhd|
 !i113 0
 R11
 R12
 Adataflow
 R1
 R2
-DEx4 work 6 mem_wb 0 22 iZK;mD@PUaeU9okcAJHB_2
-!i122 184
-l47
-L24 67
-V;;6>JVZV[O45oaYFO`BiU0
-!s100 kTOf]EefYNKFoiBag^]i32
+DEx4 work 6 mem_wb 0 22 LYKTSi`F?Nmk`;7N=z:8Q3
+!i122 204
+l48
+L25 75
+V0fCJ<AMXJOC2SmUZRCiWK3
+!s100 Ub=8ZjPAJ@^F9T@eDF:7C0
 R6
 33
-R101
+R108
 !i10b 1
-R102
-R103
-R104
+R109
+R110
+R111
 !i113 0
 R11
 R12
 Emips_processor
-w1699405167
+Z112 w1699565900
 R23
 R24
 R1
 R2
-!i122 200
+!i122 220
 R3
-Z105 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-Z106 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+Z113 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+Z114 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
 l0
 R19
 V]QGiM12X]GgG?lkJYDP<?2
 !s100 aIWKSQ@AlR4@1EGOAoF480
 R6
 33
-!s110 1699405325
+Z115 !s110 1699565922
 !i10b 1
-!s108 1699405325.000000
-Z107 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd|
-Z108 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd|
+Z116 !s108 1699565922.000000
+Z117 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd|
+Z118 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd|
 !i113 0
 R11
 R12
@@ -767,42 +812,41 @@ R23
 R24
 R1
 R2
-DEx4 work 14 mips_processor 0 22 ]QGiM12X]GgG?lkJYDP<?2
-!i122 199
-l309
-L36 495
-V4h5jbB^Og^fG[G]>U<5kX2
-!s100 CDKiWIEN2RMc3Z0WXgFP]0
+Z119 DEx4 work 14 mips_processor 0 22 ]QGiM12X]GgG?lkJYDP<?2
+!i122 220
+l333
+L36 550
+VU]343>bm@QW6gEQ]Y@=_K2
+!s100 =;9KVcegnN<fOO:9eNNo@1
 R6
 33
-!s110 1699307094
+R115
 !i10b 1
-!s108 1699307094.000000
-R107
-R108
+R116
+R117
+R118
 !i113 0
 R11
 R12
-w1699307045
 Pmips_types
 R1
 R2
 !i122 198
 R0
 R3
-Z109 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd
-Z110 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd
+Z120 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd
+Z121 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd
 l0
 L16 18
 VgfgOYlBmh2KZl;f4CSMWE2
 !s100 :z^e>kTzOC^2fc1>DIUjm1
 R6
 33
-Z111 !s110 1699307093
+Z122 !s110 1699307093
 !i10b 1
-Z112 !s108 1699307093.000000
-Z113 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd|
-Z114 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd|
+Z123 !s108 1699307093.000000
+Z124 !s90 -reportprogress|300|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd|
+Z125 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_types.vhd|
 !i113 0
 R11
 R12
@@ -817,11 +861,11 @@ V:Z6GS?SYOck][gdkRZ0@D0
 !s100 GNO0ERSkBYiH`zjnILXkl2
 R6
 33
-R111
+R122
 !i10b 1
-R112
-R113
-R114
+R123
+R124
+R125
 !i113 0
 R11
 R12
@@ -833,19 +877,19 @@ R1
 R2
 !i122 133
 R3
-Z115 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd
-Z116 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd
+Z126 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd
+Z127 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd
 l0
 L7 1
 VC=LUabH@Jz^B5:dEo_QTQ2
 !s100 IPGWKfYF]>h6OR_@IU_z61
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z117 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd|
-Z118 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd|
+Z128 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd|
+Z129 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux16t1.vhd|
 !i113 0
 R11
 R12
@@ -862,11 +906,11 @@ V31QcCeLGakzz0@VM^`gJR3
 !s100 6hD[mhS<1=MeYhd1GPma<3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R117
-R118
+R128
+R129
 !i113 0
 R11
 R12
@@ -876,19 +920,19 @@ R1
 R2
 !i122 131
 R3
-Z119 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd
-Z120 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd
+Z130 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd
+Z131 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd
 l0
 L5 1
 V]L5LQ8>6VdcIRYe7[cMb@0
 !s100 S=TZ^:^7Oa7[2g?@P?mU[2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z121 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd|
-Z122 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd|
+Z132 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd|
+Z133 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1.vhd|
 !i113 0
 R11
 R12
@@ -903,11 +947,11 @@ V5F[IgQD]hF_7P>4R2jW4E0
 !s100 k@YXXz6<_;V^A8;;0c>[L3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R121
-R122
+R132
+R133
 !i113 0
 R11
 R12
@@ -917,19 +961,19 @@ R1
 R2
 !i122 132
 R3
-Z123 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd
-Z124 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd
+Z134 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd
+Z135 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd
 l0
 L21 1
 VQAf8Q9Ej2QBN0lQXa4H@13
 !s100 Y80E^d;5=hf2cNC6Yk_Di1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z125 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd|
-Z126 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd|
+Z136 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd|
+Z137 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/mux2t1_N.vhd|
 !i113 0
 R11
 R12
@@ -944,11 +988,11 @@ V7V:NdjQzj`21zHO7]1<Hd3
 !s100 5]<bNT^CmzJZ?d_^?9]4=3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R125
-R126
+R136
+R137
 !i113 0
 R11
 R12
@@ -960,19 +1004,19 @@ R1
 R2
 !i122 148
 R3
-Z127 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd
-Z128 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd
+Z138 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd
+Z139 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd
 l0
 L6 1
 V<zX1NJ<gD?d^8IK_LO>cR3
 !s100 [=7HOm^Rz=B3l?L^Fl5`S0
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z129 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd|
-Z130 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd|
+Z140 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd|
+Z141 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Mux32t1.vhd|
 !i113 0
 R11
 R12
@@ -989,33 +1033,33 @@ VV=9ZamolQLZL9Shl1O7eb0
 !s100 0YTLbWlg>hFf0e46Z=aiD1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R129
-R130
+R140
+R141
 !i113 0
 R11
 R12
 Emux3to1
-Z131 w1699477093
+Z142 w1699477093
 R1
 R2
 !i122 202
 R64
-Z132 8/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd
-Z133 F/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd
+Z143 8/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd
+Z144 F/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd
 l0
 L4 1
 VJ]zKD7L2aaV]ioE@=^d?A3
 !s100 bLan=40_`AEBRKT0J22S91
 R6
 33
-Z134 !s110 1699478241
+Z145 !s110 1699478241
 !i10b 1
-Z135 !s108 1699478241.000000
-Z136 !s90 -reportprogress|300|-work|work|/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd|
-Z137 !s107 /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd|
+Z146 !s108 1699478241.000000
+Z147 !s90 -reportprogress|300|-work|work|/home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd|
+Z148 !s107 /home/elsabado/elsabado/cpre381/cpre381_part2/cpre381_part2/src/TopLevel/mux3to1.vhd|
 !i113 0
 R11
 R12
@@ -1030,11 +1074,11 @@ V;ICT76[2iW3Lc^GoI<FdW0
 !s100 L[U_Kj3A>Xh53;n4C[<aO3
 R6
 33
-R134
+R145
 !i10b 1
-R135
-R136
-R137
+R146
+R147
+R148
 !i113 0
 R11
 R12
@@ -1044,19 +1088,19 @@ R1
 R2
 !i122 134
 R3
-Z138 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd
-Z139 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd
+Z149 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd
+Z150 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd
 l0
 L4 1
 VTF@M:eXSlOGR[=:Lh43_D1
 !s100 C5j`YND0]hM]kk=V7iC9J2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z140 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd|
-Z141 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd|
+Z151 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd|
+Z152 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MyAdder.vhd|
 !i113 0
 R11
 R12
@@ -1071,11 +1115,11 @@ VMNZ58;N5njKT;0EbEJ`7_0
 !s100 TVccmN7lEOUaMTT4Jc4A53
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R140
-R141
+R151
+R152
 !i113 0
 R11
 R12
@@ -1085,19 +1129,19 @@ R1
 R2
 !i122 135
 R3
-Z142 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd
-Z143 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd
+Z153 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd
+Z154 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd
 l0
 L4 1
 V0LfXkAP6Pa;NknNR6Ei0S0
 !s100 DMc_^1Yn8AMKlRL0_NQc]3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z144 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd|
-Z145 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd|
+Z155 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd|
+Z156 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/N_OnesComp.vhd|
 !i113 0
 R11
 R12
@@ -1112,11 +1156,11 @@ VjJefeIN6OT@JO5Ml0BJUE1
 !s100 9hO<BKi:Z5mH1Ad[S:24S2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R144
-R145
+R155
+R156
 !i113 0
 R11
 R12
@@ -1126,19 +1170,19 @@ R1
 R2
 !i122 136
 R3
-Z146 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd
-Z147 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd
+Z157 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd
+Z158 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd
 l0
 L5 1
 VHhOQ5Y_e1>7]FJB]j`9Jl1
 !s100 d;cBj03WE>6G1eiaBQic`1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z148 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd|
-Z149 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd|
+Z159 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd|
+Z160 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Nbit_adder.vhd|
 !i113 0
 R11
 R12
@@ -1153,11 +1197,11 @@ Vz`QXiYVf_G8_6W`9]aSCf2
 !s100 jJTVFi0S0e<1=LH]_7=^G1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R148
-R149
+R159
+R160
 !i113 0
 R11
 R12
@@ -1168,19 +1212,19 @@ R1
 R2
 !i122 137
 R3
-Z150 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd
-Z151 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd
+Z161 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd
+Z162 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd
 l0
 L5 1
 V3F0eLNNddj?o8@[HlHOOP3
 !s100 `dMZ@iK7VE3URgY>_?GeI0
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z152 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd|
-Z153 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd|
+Z163 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd|
+Z164 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitAnd.vhd|
 !i113 0
 R11
 R12
@@ -1191,16 +1235,16 @@ R2
 DEx4 work 7 nbitand 0 22 3F0eLNNddj?o8@[HlHOOP3
 !i122 137
 l22
-Z154 L15 15
+Z165 L15 15
 V_g<bJKECCbE3I1:mcFVVS3
 !s100 [=@Oe?4FDU3^gHHGeXCU]1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R152
-R153
+R163
+R164
 !i113 0
 R11
 R12
@@ -1211,19 +1255,19 @@ R1
 R2
 !i122 138
 R3
-Z155 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd
-Z156 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd
+Z166 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd
+Z167 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd
 l0
 L5 1
 VZc9=RNhUjgJ`6=Tl5jbfD0
 !s100 4N0nMRI[M3d>gzPQ8fgnZ3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z157 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd|
-Z158 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd|
+Z168 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd|
+Z169 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitNor.vhd|
 !i113 0
 R11
 R12
@@ -1239,11 +1283,11 @@ VdznAaafE:hZ:iUHakY_0K2
 !s100 TaYO^g^H1mQ?6DKScaOhS1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R157
-R158
+R168
+R169
 !i113 0
 R11
 R12
@@ -1254,19 +1298,19 @@ R1
 R2
 !i122 139
 R3
-Z159 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd
-Z160 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd
+Z170 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd
+Z171 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd
 l0
 L5 1
 V`VM7lWJ__H52VFV>;aO8_3
 !s100 [edCM_g@H7Ln=b4HJYjGh0
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z161 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd|
-Z162 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd|
+Z172 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd|
+Z173 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nbitOr.vhd|
 !i113 0
 R11
 R12
@@ -1277,16 +1321,16 @@ R2
 DEx4 work 6 nbitor 0 22 `VM7lWJ__H52VFV>;aO8_3
 !i122 139
 l22
-R154
+R165
 V<Gf]1B;a^2`;1^N23^ehM3
 !s100 =5V]VNTMMLP505CniaWjS2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R161
-R162
+R172
+R173
 !i113 0
 R11
 R12
@@ -1297,19 +1341,19 @@ R1
 R2
 !i122 140
 R3
-Z163 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd
-Z164 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd
+Z174 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd
+Z175 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd
 l0
 L4 1
 V2oQ9FSjCOAX556BcSHi2K3
 !s100 cZod[zV2Hen2`3F`G7>Qd3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z165 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd|
-Z166 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd|
+Z176 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd|
+Z177 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/newBarrelShifter.vhd|
 !i113 0
 R11
 R12
@@ -1325,11 +1369,11 @@ VJPY8lWH?0^FdoDM4WO]oG0
 !s100 LH8_K9[mQga=o6SCbJFXN2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R165
-R166
+R176
+R177
 !i113 0
 R11
 R12
@@ -1340,19 +1384,19 @@ R1
 R2
 !i122 147
 R3
-Z167 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd
-Z168 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd
+Z178 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd
+Z179 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd
 l0
 L5 1
 V7iEb5R`blA^`OzO36a[P=1
 !s100 nhRKJb^QLPS5ddf4SjEC@3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z169 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd|
-Z170 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd|
+Z180 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd|
+Z181 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/nXor.vhd|
 !i113 0
 R11
 R12
@@ -1363,16 +1407,16 @@ R2
 DEx4 work 4 nxor 0 22 7iEb5R`blA^`OzO36a[P=1
 !i122 147
 l22
-R154
+R165
 VY5E7K]Mb9`Km`]OR:AbQ=2
 !s100 ?Mb:7EEj>M?QE:zL?gGEX2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R169
-R170
+R180
+R181
 !i113 0
 R11
 R12
@@ -1382,19 +1426,19 @@ R1
 R2
 !i122 146
 R3
-Z171 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd
-Z172 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd
+Z182 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd
+Z183 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd
 l0
 L4 1
 V0LnezUhWU[zo[j^?JR0@10
 !s100 5acf[S0@225oeQd4CRG8d0
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z173 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd|
-Z174 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd|
+Z184 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd|
+Z185 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/one_BitAdder.vhd|
 !i113 0
 R11
 R12
@@ -1409,11 +1453,11 @@ VAQYBYM0V8K1UoG;Oibh>M1
 !s100 h9EozU7Un:ei]Z@z[ADg21
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R173
-R174
+R184
+R185
 !i113 0
 R11
 R12
@@ -1423,19 +1467,19 @@ R1
 R2
 !i122 144
 R3
-Z175 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd
-Z176 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd
+Z186 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd
+Z187 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd
 l0
 L4 1
 VkB1>;XL4;ZKLf7bIjdCWN0
 !s100 i3n50gVWzmmDCPZKXX;I43
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z177 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd|
-Z178 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd|
+Z188 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd|
+Z189 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/OnesComp.vhd|
 !i113 0
 R11
 R12
@@ -1450,11 +1494,11 @@ VdXXTZ5HHiAjVg7lSZ8I]_1
 !s100 8eUPZD03;64`1cNOPjJNE1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R177
-R178
+R188
+R189
 !i113 0
 R11
 R12
@@ -1464,19 +1508,19 @@ R1
 R2
 !i122 145
 R3
-Z179 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd
-Z180 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd
+Z190 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd
+Z191 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd
 l0
 R19
 VkbW`>IOf=9G1AFX9^DNzY1
 !s100 hJAZ>EB8bm_e<^5IFaP9e1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z181 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd|
-Z182 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd|
+Z192 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd|
+Z193 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/org2.vhd|
 !i113 0
 R11
 R12
@@ -1491,11 +1535,11 @@ Vgb<e=7>XBQTJGCc<Rd:i:1
 !s100 nma>Pa=mMW`KzzjeW=1[d1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R181
-R182
+R192
+R193
 !i113 0
 R11
 R12
@@ -1506,19 +1550,19 @@ R1
 R2
 !i122 143
 R3
-Z183 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd
-Z184 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd
+Z194 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd
+Z195 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd
 l0
 L11 1
 VFg92BKkT16fzM2jSRhW`A3
 !s100 9oO2M@@P_JU9j7nIEE5]o3
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z185 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd|
-Z186 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd|
+Z196 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd|
+Z197 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/RegFile.vhd|
 !i113 0
 R11
 R12
@@ -1534,11 +1578,11 @@ V[9:1X0o^Ag>HCad8i]il`1
 !s100 1XE42N_O<mR0D>B9HHXRC1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R185
-R186
+R196
+R197
 !i113 0
 R11
 R12
@@ -1548,19 +1592,19 @@ R1
 R2
 !i122 142
 R3
-Z187 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd
-Z188 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd
+Z198 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd
+Z199 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd
 l0
 L4 1
 VlA^ATm?0d>MLdD:4C1IN;1
 !s100 J<ahA2BSCNP7KTehM_PmS1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z189 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd|
-Z190 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd|
+Z200 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd|
+Z201 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/Register_N.vhd|
 !i113 0
 R11
 R12
@@ -1575,11 +1619,11 @@ VbWn=2?n^WU3?94=f>DohX1
 !s100 9Z>nCTj4kG?9[E;L=k^?60
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R189
-R190
+R200
+R201
 !i113 0
 R11
 R12
@@ -1589,19 +1633,19 @@ R1
 R2
 !i122 141
 R3
-Z191 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd
-Z192 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd
+Z202 8/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd
+Z203 F/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd
 l0
 R19
 VESJV1emcX7m;an9A`9kkk3
 !s100 zGkHVGJ]HQ5RboN2N>KzN1
 R6
 33
-R91
+R98
 !i10b 1
 R42
-Z193 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd|
-Z194 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd|
+Z204 !s90 -reportprogress|30|-work|work|/home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd|
+Z205 !s107 /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/xorg2.vhd|
 !i113 0
 R11
 R12
@@ -1616,11 +1660,11 @@ VI5[iO;Q^1X31k599`eic[1
 !s100 2<f]d3XziROLh_[:_6mNg2
 R6
 33
-R91
+R98
 !i10b 1
 R42
-R193
-R194
+R204
+R205
 !i113 0
 R11
 R12

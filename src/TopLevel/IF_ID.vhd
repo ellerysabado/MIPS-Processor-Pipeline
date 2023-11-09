@@ -6,6 +6,7 @@ entity IF_ID is
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
+       i_Flush      : in std_logic_vector(31 downto 0);     -- Data value input
        i_PCAdd      : in std_logic_vector(N-1 downto 0);     -- Data value input
        i_InstMem    : in std_logic_vector(N-1 downto 0);     -- Data value input 
        o_PCAdd      : out std_logic_vector(N-1 downto 0);     -- Data value output FIX THIS Data bits--------------------------------

@@ -21,15 +21,15 @@ BEGIN
 
     ControlMUXSel <= '0' WHEN (ID_EX_MemRead = '1' AND
         ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
-        (ID_EX_RegisterRt = IF_ID_RegisterRt)));
+        (ID_EX_RegisterRt = IF_ID_RegisterRt)))
 
     IF_ID_Write <= '0' WHEN (ID_EX_MemRead = '1' AND
         ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
-        (ID_EX_RegisterRt = IF_ID_RegisterRt)));
+        (ID_EX_RegisterRt = IF_ID_RegisterRt)))
 
         IF_Flush <= x"00000000" WHEN (ID_EX_MemRead = '1' AND
         ((ID_EX_RegisterRt = IF_ID_RegisterRs) OR
-        (ID_EX_RegisterRt = IF_ID_RegisterRt)));
+        (ID_EX_RegisterRt = IF_ID_RegisterRt)))
 
     
     END Behavioral;

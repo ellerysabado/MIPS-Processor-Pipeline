@@ -174,6 +174,7 @@ component IF_ID is
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
+       i_Flush      : in std_logic_vector(31 downto 0);     -- Data value input
        i_PCAdd      : in std_logic_vector(N-1 downto 0);     -- Data value input
        i_InstMem    : in std_logic_vector(N-1 downto 0);     -- Data value input 
        o_PCAdd      : out std_logic_vector(N-1 downto 0);     -- Data value output FIX THIS Data bits--------------------------------
@@ -260,11 +261,24 @@ generic(N : integer := 32);
 
 END component;
 
+component HazardDetectionUnit IS
+    PORT (
+        ID_EX_MemRead    : IN STD_LOGIC;
+        ID_EX_RegisterRt : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        IF_ID_RegisterRs : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        IF_ID_RegisterRt : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+        ControlMUXSel    : OUT STD_LOGIC;
+        PCWrite          : OUT STD_LOGIC;
+        IF_ID_Write      : OUT STD_LOGIC;
+        IF_Flush         : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+    );
+END component;
+
 --Extra Added Signals 
 signal  s_RD         :  std_logic_vector(4 downto 0);     
 signal  s_RegOutData  	   :  std_logic_vector(31 downto 0);
 signal  s_imm16            :  std_logic_vector(15 downto 0);
-signal  s_imm32 	   :  std_logic_vector(31 downto 0);
+signal  s_imm32, s_IF_Flush 	   :  std_logic_vector(31 downto 0);
 signal  s_MuxOutToALU      :  std_logic_vector(N-1 downto 0);
 signal  s_ALUSrc           :  std_logic;
 signal  s_ALUControl 	   :  std_logic_vector(3 downto 0);
@@ -302,15 +316,19 @@ signal s_MemWrite_MEM :  std_logic;
 signal s_MemRead_MEM :  std_logic;
 signal s_RegWrite_MEM :  std_logic;
 signal s_RegWrite_EX :  std_logic;
-signal s_MemtoReg_MEM :  std_logic;
-signal s_RegWrite_WB  :  std_logic;
+signal s_MemtoReg_MEM :  std_logic;  
+signal s_RegWrite_WB, s_MemWrite_ID  :  std_logic;
 signal s_MemtoReg_WB  :  std_logic;
 signal s_MemReadData_WB :  std_logic_vector(N-1 downto 0);
 signal s_ALUout_WB  :  std_logic_vector(N-1 downto 0);
 signal s_RegDstMux_WB :  std_logic_vector(4 downto 0);
 signal s_RegDstMux_EX :  std_logic_vector(4 downto 0);
 signal s_RegDstMux_MEM :  std_logic_vector(4 downto 0);
-signal s_Inst_EX, s_Inst_MEM, s_Inst_WB  :  std_logic_vector(N-1 downto 0);
+signal s_Inst_EX, s_Inst_MEM, s_Inst_WB, sALUOut_in  :  std_logic_vector(N-1 downto 0);
+signal s_IF_ID_Write, s_ControlMuxSel, s_PCWrite : std_logic;
+signal s_ControlMuxIn, s_ControlMuxOut :  std_logic_vector(14 downto 0);
+
+
 
 begin
 
@@ -346,12 +364,12 @@ with s_Inst_WB select
   -- TODO: Implement the rest of your processor below this comment! 
 g_extender: Extender 
 port map(i_data	=> s_Inst_ID(15 downto 0),
-	sel	=> s_ExtSelect,
+	sel	=> s_ControlMuxOut(1),
 	o_data	=> s_imm32);
 
 g_MuxWriteReg: mux2t1_N
 generic map(N => 5)
-port map(i_S		=> s_RegDst,
+port map(i_S		=> s_ControlMuxOut(7),
 	i_D0		=> s_Inst_ID(20 downto 16),
 	i_D1		=> s_Inst_ID(15 downto 11),
 	o_O		=> s_RD);
@@ -365,12 +383,12 @@ port map(i_CLK		=> iCLK,
 	i_RT		=> s_Inst_ID(20 downto 16),
 	i_RD		=> s_RegDstMux_WB,
 	o_Q		=> s_RegOutData,
-	o_O		=> s_DMemData);
+	o_O		=> s_O_MEM);
 
 g_PCreg : Register_N
 port map(i_CLK       => iCLK, 
        i_RST         => iRST,
-       i_WE          => '1',
+       i_WE          => s_PCWrite,
        i_D           => s_PCoutput,
        o_Q           => s_NextInstAddr);
 
@@ -382,13 +400,13 @@ port map(i_S		=> s_ALUSrc_EX,
 
 g_FetchComponent: FetchComponent
 port map(i_CLK		=> iCLK,     
-       i_jAddr		=> s_Inst(25 downto 0),      
+       i_jAddr		=> s_Inst_ID(25 downto 0),      
        i_PC		=> s_PCAdd,        
        i_branchMuxD1 => s_PCAddBranch_EX,
        i_branchEN	=> s_PCSrc,       
-       i_jumpEN		=> s_Jump,    
+       i_jumpEN		=> s_ControlMuxOut(5),    
        i_jrAddr		=> s_RegOutData,      
-       i_jrEN		=> s_JumpReg,	    
+       i_jrEN		=> s_ControlMuxOut(3),	    
        o_pcOut		=> s_PCoutput,     
        o_final	        => s_pcDEL);
 
@@ -410,7 +428,7 @@ port map(i_OpCode      => s_Inst_ID(31 downto 26),
        o_ALUSrc        => s_ALUSrc, 
        o_ALUControl    => s_ALUControl, 
        o_Mem2Reg       => s_Mem2Reg,
-       o_MemWrite      => s_DMemWr, 
+       o_MemWrite      => s_MemWrite_ID, 
        o_RegDst        => s_RegDst,
        o_RegWrite      => s_RegWr_ID,                   
        o_Jump          => s_Jump,
@@ -436,6 +454,7 @@ port map(alucontrol	=> s_ALUOp_EX,
 	o_ASum		=> oALUOut);
 
 s_DMemAddr <= s_ALUout_MEM;
+sALUOut_in <= oALUOut;
 
 g_MuxMemToReg: mux2t1_N
 port map(i_S		=> s_MemtoReg_WB,
@@ -446,7 +465,7 @@ port map(i_S		=> s_MemtoReg_WB,
 g_jumplinkMUX0: mux2t1_N 
 generic map(N => 32)
 port map (
-    i_S  => s_JumpLink,
+    i_S  => s_ControlMuxOut(4),
     i_D0 => s_DMemAddr,      
     i_D1 => s_pcDEL,     
     o_O  => s_Data);
@@ -454,7 +473,7 @@ port map (
 g_jumplinkMUX1: mux2t1_N
 generic map(N => 5) 
 port map (
-    i_S  => s_JumpLink,
+    i_S  => s_ControlMuxOut(4),
     i_D0 => s_RegDstMux_WB,      
     i_D1 => "11111",     
     o_O  => s_RegWrAddr);
@@ -462,7 +481,8 @@ port map (
 g_IF_ID: IF_ID 
 port map(i_CLK		=> iCLK,     
        i_RST    	=> iRST,    
-       i_WE     	=> '1',    
+       i_WE     	=> s_IF_ID_Write,
+       i_Flush    => s_IF_Flush,  
        i_PCAdd   	=> s_PCoutput,
        i_InstMem    	=> s_Inst,
        o_PCAdd     	=> s_PCAdd,
@@ -477,14 +497,14 @@ g_ID_EX: ID_EX
         i_RegDstMux   => s_RD,
         i_imm        	=> s_imm32,
         i_Q           	=> s_RegOutData,
-        i_O           	=> s_DMemData,
-        i_ALUSrc      	=> s_ALUSrc,
-        i_ALUOp       	=> s_ALUControl,
-        i_RegWrite      	=> s_RegWr_ID,
-        i_Branch      	=> s_Branch,
-        i_MemWrite    	=> s_DMemWr,
-        i_MemRead     	=> s_MemRead,
-        i_MemtoReg   	=> s_Mem2Reg,
+        i_O           	=> s_O_MEM,
+        i_ALUSrc      	=> s_ControlMuxOut(14),
+        i_ALUOp       	=> s_ControlMuxOut(13 downto 10),
+        i_RegWrite      	=> s_ControlMuxOut(6),
+        i_Branch      	=> s_ControlMuxOut(2),
+        i_MemWrite    	=> s_ControlMuxOut(8),
+        i_MemRead     	=> s_ControlMuxOut(0),
+        i_MemtoReg   	=> s_ControlMuxOut(9),
         o_Inst_ID       => s_Inst_EX,
         o_PCAddBranch   => s_PCAddBranch_EX,
         o_imm         	=> s_imm_EX,
@@ -507,16 +527,16 @@ port map(i_CLK    	=> iCLK,
         i_Inst_EX     => s_Inst_EX,
         i_RegDstMux  	=> s_RegDstMux_EX,
         i_O         	=> s_O_EX,
-        i_ALUout     	=> oALUOut,
+        i_ALUout     	=> sALUOut_in,
         i_MemWrite   	=> s_MemWrite_EX,
         i_MemRead    	=> s_MemRead_EX,
         i_RegWrite   	=> s_RegWrite_EX,
         i_MemToReg    => s_MemtoReg_EX,
         o_Inst_EX     => s_Inst_MEM,
         o_RegDstMux 	=> s_RegDstMux_MEM,
-        o_O         	=> s_O_MEM,
+        o_O         	=> s_DMemData,
         o_ALUout     	=> s_ALUout_MEM,
-        o_MemWrite   	=> s_MemWrite_MEM, 
+        o_MemWrite   	=> s_DMemWr, 
         o_MemRead   	=> s_MemRead_MEM,
         o_RegWrite   	=> s_RegWrite_MEM,
         o_MemtoReg    => s_MemtoReg_MEM);
@@ -538,6 +558,29 @@ PORT map (
     o_MemReadData    => s_MemReadData_WB,
     o_ALUout         => s_ALUout_WB,
     o_RegDstMux      => s_RegDstMux_WB);
+
+g_HazardDetectionUnit: HazardDetectionUnit 
+PORT map(
+    ID_EX_MemRead     => s_MemRead_EX,
+    ID_EX_RegisterRt  => s_Inst_EX(20 downto 16),
+    IF_ID_RegisterRs  => s_Inst_ID(15 downto 11),
+    IF_ID_RegisterRt  => s_Inst_ID(20 downto 16),
+    ControlMUXSel     => s_ControlMuxSel,
+    PCWrite           => s_PCWrite,
+    IF_ID_Write       => s_IF_ID_Write,
+    IF_Flush          => s_IF_Flush);
+
+s_ControlMuxIn <= s_ALUSrc & s_ALUControl & s_Mem2Reg & s_MemWrite_ID & s_RegDst & s_RegWr_ID & s_Jump & s_JumpLink & s_JumpReg
+                  & s_Branch & s_ExtSelect & s_MemRead;
+
+g_ControlMuxSel: mux2t1_N
+generic map(N => 15)
+port map(
+    i_S		=> s_ControlMuxSel,
+	  i_D0		=> "000000000000000",
+	  i_D1		=> s_ControlMuxIn,
+  	o_O		=> s_ControlMuxOut);
+
 
 end structure;
 
