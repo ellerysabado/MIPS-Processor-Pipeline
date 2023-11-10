@@ -6,7 +6,7 @@ entity IF_ID is
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
-       i_Flush      : in std_logic_vector(31 downto 0);     -- Data value input
+       i_Flush      : in std_logic;     -- Data value input
        i_PCAdd      : in std_logic_vector(N-1 downto 0);     -- Data value input
        i_InstMem    : in std_logic_vector(N-1 downto 0);     -- Data value input 
        o_PCAdd      : out std_logic_vector(N-1 downto 0);     -- Data value output FIX THIS Data bits--------------------------------
@@ -26,8 +26,21 @@ component Register_N
 
 end component;
 
+signal s_PCAdd, s_InstMem : std_logic_vector(N-1 downto 0);
+
 
 begin
+
+  process(i_Flush, i_PCAdd, i_InstMem)
+  begin
+    if(i_Flush = '1') then
+      s_PCAdd <= x"00000000";
+      s_InstMem <= x"00000000";
+    else 
+    s_PCAdd <= i_PCAdd;
+    s_InstMem <= i_InstMem;
+    end if;
+    end process;
 
   PCAdd : Register_N
 	port MAP(i_CLK           => i_CLK,

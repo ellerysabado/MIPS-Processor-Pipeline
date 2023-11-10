@@ -12,103 +12,60 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:16:50 on Nov 09,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(500): Cannot resolve indexed name (type ieee.std_logic_1164.STD_ULOGIC) as type ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(569): near ")": syntax error
-# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(572): (vcom-1272) Length of expected is 12; length of actual is 15.
-# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(583): VHDL Compiler exiting
-# End time: 15:16:50 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:19:16 on Nov 09,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(569): near ")": syntax error
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(500): (vcom-1167) Index value 14 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 11 downto 0.
-# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(572): (vcom-1272) Length of expected is 12; length of actual is 15.
-# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(583): VHDL Compiler exiting
-# End time: 15:19:16 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:19:47 on Nov 09,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(569): near ")": syntax error
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(499): (vcom-1152) Index value 15 is out of index range 11 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(500): (vcom-1167) Index value 14 (of type ieee.std_logic_1164.STD_LOGIC_VECTOR) is out of range 11 downto 0.
-# ** Error (suppressible): /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(572): (vcom-1272) Length of expected is 12; length of actual is 15.
-# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(583): VHDL Compiler exiting
-# End time: 15:19:47 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:20:15 on Nov 09,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(569): near ")": syntax error
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(499): (vcom-1152) Index value 15 is out of index range 14 downto 0 of ieee.std_logic_1164.STD_LOGIC_VECTOR.
-# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(583): VHDL Compiler exiting
-# End time: 15:20:15 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
-# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:23:54 on Nov 09,2023
-# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package MIPS_types
-# -- Compiling entity MIPS_Processor
-# -- Compiling architecture structure of MIPS_Processor
-# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(569): near ")": syntax error
-# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(583): VHDL Compiler exiting
-# End time: 15:23:54 on Nov 09,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
 vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:38:40 on Nov 09,2023
+# Start time: 10:39:06 on Nov 10,2023
 # vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity IF_ID
 # -- Compiling architecture dataflow of IF_ID
-# End time: 15:38:40 on Nov 09,2023, Elapsed time: 0:00:00
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd(32): near "begin": (vcom-1576) expecting ';'.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd(39): VHDL Compiler exiting
+# End time: 10:39:06 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:39:42 on Nov 10,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture dataflow of IF_ID
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd(38): near "s_InstMem": (vcom-1576) expecting ';'.
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd(41): near "<": (vcom-1576) expecting == or '+' or '-' or '&'.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd(60): VHDL Compiler exiting
+# End time: 10:39:42 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:40:02 on Nov 10,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/IF_ID.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity IF_ID
+# -- Compiling architecture dataflow of IF_ID
+# End time: 10:40:02 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/HazardDetectionUnit.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:40:35 on Nov 10,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/HazardDetectionUnit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity HazardDetectionUnit
+# -- Compiling architecture Behavioral of HazardDetectionUnit
+# End time: 10:40:35 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
 # QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
-# Start time: 15:38:42 on Nov 09,2023
+# Start time: 10:40:44 on Nov 10,2023
 # vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -117,5 +74,50 @@ vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_part
 # -- Loading package MIPS_types
 # -- Compiling entity MIPS_Processor
 # -- Compiling architecture structure of MIPS_Processor
-# End time: 15:38:42 on Nov 09,2023, Elapsed time: 0:00:00
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_IF_Flush" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(585): VHDL Compiler exiting
+# End time: 10:40:44 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:41:08 on Nov 10,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_IF_Flush" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(585): VHDL Compiler exiting
+# End time: 10:41:08 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:41:10 on Nov 10,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# ** Error: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(571): Signal "s_IF_Flush" is type ieee.std_logic_1164.STD_LOGIC; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+# ** Note: /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd(585): VHDL Compiler exiting
+# End time: 10:41:10 on Nov 10,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd
+# QuestaSim-64 vcom 2023.2_2 Compiler 2023.06 Jun  9 2023
+# Start time: 10:41:25 on Nov 10,2023
+# vcom -reportprogress 300 -work work /home/gulotta3/Gulotta3/CprE381/cpre381_partB/proj/src/TopLevel/MIPS_Processor.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MIPS_types
+# -- Compiling entity MIPS_Processor
+# -- Compiling architecture structure of MIPS_Processor
+# End time: 10:41:25 on Nov 10,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

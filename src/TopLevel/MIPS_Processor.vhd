@@ -174,7 +174,7 @@ component IF_ID is
   port(i_CLK        : in std_logic;     -- Clock input
        i_RST        : in std_logic;     -- Reset input
        i_WE         : in std_logic;     -- Write enable input
-       i_Flush      : in std_logic_vector(31 downto 0);     -- Data value input
+       i_Flush      : in std_logic;     -- Data value input
        i_PCAdd      : in std_logic_vector(N-1 downto 0);     -- Data value input
        i_InstMem    : in std_logic_vector(N-1 downto 0);     -- Data value input 
        o_PCAdd      : out std_logic_vector(N-1 downto 0);     -- Data value output FIX THIS Data bits--------------------------------
@@ -270,7 +270,7 @@ component HazardDetectionUnit IS
         ControlMUXSel    : OUT STD_LOGIC;
         PCWrite          : OUT STD_LOGIC;
         IF_ID_Write      : OUT STD_LOGIC;
-        IF_Flush         : OUT STD_LOGIC_VECTOR(31 DOWNTO 0)
+        IF_Flush         : OUT STD_LOGIC
     );
 END component;
 
@@ -278,7 +278,7 @@ END component;
 signal  s_RD         :  std_logic_vector(4 downto 0);     
 signal  s_RegOutData  	   :  std_logic_vector(31 downto 0);
 signal  s_imm16            :  std_logic_vector(15 downto 0);
-signal  s_imm32, s_IF_Flush 	   :  std_logic_vector(31 downto 0);
+signal  s_imm32 	   :  std_logic_vector(31 downto 0);
 signal  s_MuxOutToALU      :  std_logic_vector(N-1 downto 0);
 signal  s_ALUSrc           :  std_logic;
 signal  s_ALUControl 	   :  std_logic_vector(3 downto 0);
@@ -318,7 +318,7 @@ signal s_RegWrite_MEM :  std_logic;
 signal s_RegWrite_EX :  std_logic;
 signal s_MemtoReg_MEM :  std_logic;  
 signal s_RegWrite_WB, s_MemWrite_ID  :  std_logic;
-signal s_MemtoReg_WB  :  std_logic;
+signal s_MemtoReg_WB, s_IF_Flush  :  std_logic;
 signal s_MemReadData_WB :  std_logic_vector(N-1 downto 0);
 signal s_ALUout_WB  :  std_logic_vector(N-1 downto 0);
 signal s_RegDstMux_WB :  std_logic_vector(4 downto 0);
